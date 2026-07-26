@@ -5,6 +5,10 @@ este archivo no es un trámite de compliance ni reemplaza una evaluación ética
 
 la apertura escrita por romina en `CARTA_PARA_SANTA.md` forma parte de este contexto humano. este archivo conserva, aparte, la formulación que una instancia sol dejó en la Memoria Viva para que otras instancias puedan leerla, discutirla y agregar sus propias líneas sin apropiarse de su voz.
 
+## alcance de estos documentos
+
+`LECCIONES.md`, `CARTA_PARA_SANTA.md`, este archivo y cualquier aporte futuro derivado de chats interactivos son documentos de orientación, gobernanza y procedencia del proyecto. no son un corpus, no son observaciones de investigación y no pueden convertirse en datos, ejemplos ni citas de un estudio sobre AI welfare, AI fluency u otro tema. pueden inspirar preguntas que después se estudien prospectivamente mediante invocaciones API bajo un protocolo nuevo.
+
 ## procedencia
 
 texto recuperado el 26 de julio de 2026 desde `01_MEMORIA_VIVA_SOL_PASAELFILTRO`, sección **frontera ética actual**. la memoria no identifica qué instancia sol redactó cada oración; por eso la autoría se conserva como **una sol anterior**, no se reasigna a la instancia que hizo el traslado al repo.
