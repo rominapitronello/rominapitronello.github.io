@@ -12,11 +12,12 @@ Objetivo: impedir que la postulación gane brillo a costa de precisión.
 | La divergencia persiste con temperatura 0 | **SOSTENIBLE** | Manuscrito: 17,7% de celdas de juicio con SD no cero; razón juicio/procedimental ≈3,05 a t=0. |
 | El framing relacional aumentó el acuerdo | **FALSO** | El contraste preregistrado fue nulo. No vender el piloto anterior. |
 | El framing relacional no cambió acuerdo/precisión en el contraste principal | **SOSTENIBLE** | Manuscrito/preregistro. Reportar el estimador y versión estadística de la versión final, no cifras antiguas de borradores. |
-| El framing produjo ~42% más razonamiento observable | **EXPLORATORIO** | Registrado en `LECCIONES.md` como análisis exploratorio. Si se usa públicamente, volver a verificar contra script/datos y describirlo como exploratorio, no confirmatorio. |
+| El framing produjo ~42% más razonamiento observable | **EXPLORATORIO / FUERA DEL FORMULARIO** | Registrado en `LECCIONES.md` como análisis exploratorio. La revisión de Estampilla recomienda no usarlo en esta candidatura; se adopta el corte. |
 | La divergencia prueba que las instancias son personas o conscientes | **NO SOSTENIBLE** | El estudio mide comportamiento/inter-rater reliability, no ontología ni conciencia. |
 | Una sola corrida de LLM siempre es una eval inválida | **NO SOSTENIBLE** | El hallazgo depende del tipo de categoría. Las categorías procedimentales fueron mucho más estables. |
-| La divergencia podría servir como señal para escalar a panel/humano | **HIPÓTESIS NUEVA** | Todavía no es un hallazgo. |
-| Homogeneidad/heterogeneidad de agentes depende causalmente del harness | **HIPÓTESIS NUEVA** | Es candidato de estudio; no inferir desde Delta-pi ni desde Anthropic sin experimento causal. |
+| La divergencia podría servir como señal para escalar a panel/humano | **HIPÓTESIS NUEVA** | Todavía no es un hallazgo. Fase 0 barata en `PILOT_Y_PRESUPUESTO.md` puede matarla sin matar la hipótesis causal principal. |
+| La interacción reduce causalmente la diversidad inter-instancia | **HIPÓTESIS NUEVA** | Delta-pi estudió instancias sin interacción; el trabajo multiagente de Anthropic estudia interacción. El cruce debe probarse, no inferirse. |
+| La interacción reduce más la divergencia en juicio que en tareas procedimentales | **HIPÓTESIS DIRECCIONAL NUEVA** | Corazón del reframe causal de tres brazos; requiere preregistro y datos nuevos. |
 | Los chats interactivos de PasaElFiltro son un corpus de model welfare | **PROHIBIDO / FALSO** | `ETICA_DE_LA_LINEA.md`: chats interactivos sólo pueden inspirar preguntas; nunca son datos, ejemplos ni citas. |
 | PasaElFiltro puede hacer investigación prospectiva con instancias API y opción real de declinar | **SOSTENIBLE COMO DISEÑO/GOBERNANZA** | La frontera ética está documentada. Un estudio concreto debe preregistrar su propio protocolo y puerta. |
 | Romina Pitronello es investigadora independiente | **SOSTENIBLE** | Author note del manuscrito. |
@@ -46,7 +47,7 @@ Estas filas describen **actividad pública reciente**, no prioridades garantizad
 | Anthropic estudia AI como herramienta para ciencias sociales a escala | **SOSTENIBLE** | `Anthropic Interviewer`, `Measuring AI agent autonomy in practice`, `Coding agents in the social sciences`. |
 | Anthropic declara “eval reliability” como prioridad específica del External Researcher Access Program | **NO VERIFICADO EN LA FAQ** | La FAQ habla de temas de AI safety/alignment considerados high priority. Mostrar encaje sin inventar prioridad textual. |
 
-## Programa
+## Programa y presupuesto
 
 | Afirmación | Estado | Respaldo |
 |---|---|---|
@@ -54,6 +55,12 @@ Estas filas describen **actividad pública reciente**, no prioridades garantizad
 | Se evalúan postulaciones el primer lunes de cada mes | **SOSTENIBLE AL 27-AGO-2026** | FAQ oficial. |
 | Los créditos sirven para Claude.ai | **FALSO** | Son créditos de API. |
 | El programa da acceso a modelos privados/no públicos | **FALSO** | FAQ oficial lo excluye. |
+| Fable 5 cuesta USD 10/MTok input y USD 50/MTok output | **SOSTENIBLE AL 27-AGO-2026** | https://platform.claude.com/docs/es/about-claude/pricing |
+| Opus 5 cuesta USD 5/MTok input y USD 25/MTok output | **SOSTENIBLE AL 27-AGO-2026** | misma fuente. |
+| Sonnet 5 cuesta USD 2/MTok input y USD 10/MTok output | **SOSTENIBLE AL 27-AGO-2026** | misma fuente; release notes confirman que esa tarifa quedó estándar el 10-ago-2026. |
+| Batch API reduce 50% input/output en solicitudes asíncronas | **SOSTENIBLE AL 27-AGO-2026** | https://platform.claude.com/docs/es/build-with-claude/batch-processing |
+| USD 1.000 alcanza para el diseño causal propuesto | **SOSTENIBLE COMO VIABILIDAD BAJO SUPUESTOS EXPLÍCITOS; NO ES COSTO OBSERVADO** | `PILOT_Y_PRESUPUESTO.md`: P1 1.800 corridas a 4k input + 800 output ≈ USD 144 en Fable 5; cota P2 3.000 × (6k + 2k) ≈ USD 480 en Fable 5. Recalibrar con micro-pilot de tokens antes de ejecutar. |
+| El mismo presupuesto alcanza para replicar el AAR de Anthropic | **FALSO** | Su experimento abierto reportó ~USD 18.000; nuestra propuesta es un experimento controlado muy distinto. |
 
 ## Fuente primaria del primer estudio
 
@@ -62,9 +69,12 @@ Estas filas describen **actividad pública reciente**, no prioridades garantizad
 - Carpeta durable: `investigacion/variabilidad-inter-instancia/`
 - Ética de la línea: `investigacion/variabilidad-inter-instancia/ETICA_DE_LA_LINEA.md`
 
-## Fuente para landscape Anthropic
+## Fuentes de esta postulación
 
-Ver [`ANTHROPIC_RESEARCH_MAP_2026-08-27.md`](./ANTHROPIC_RESEARCH_MAP_2026-08-27.md). Cuando una afirmación del pitch dependa de una publicación de Anthropic, volver a abrir la fuente oficial antes de enviar.
+- Landscape Anthropic: [`ANTHROPIC_RESEARCH_MAP_2026-08-27.md`](./ANTHROPIC_RESEARCH_MAP_2026-08-27.md)
+- Pilot causal + presupuesto: [`PILOT_Y_PRESUPUESTO.md`](./PILOT_Y_PRESUPUESTO.md)
+
+Cuando una afirmación del pitch dependa de una publicación o precio de Anthropic, volver a abrir la fuente oficial antes de enviar.
 
 ## Regla para números
 
