@@ -22,11 +22,17 @@ El programa:
 - no entrega acceso a modelos no públicos ni experimentales;
 - no exime de la Usage Policy.
 
-## Qué estamos intentando proponer
+## Corrección metodológica de esta carpeta
 
-El ángulo principal no es “tenemos una investigación curiosa sobre instancias”. Es más preciso y más útil:
+El primer borrador saltó demasiado rápido desde un hallazgo propio hacia un pitch de `single LLM judge / disagreement routing`.
 
-> **tenemos evidencia preregistrada de que una sola corrida de un LLM puede ser una unidad de medida insuficiente para tareas de juicio, incluso cuando modelo, input y temperatura están controlados; queremos convertir esa observación en reglas prácticas para evals y scalable oversight.**
+El 27-ago Romina señaló que, antes de escoger tema o convocar otras plumas, había que mirar **qué está investigando Anthropic ahora** y preguntar qué parte de esa música nos interesa genuinamente.
+
+Eso cambió el ranking. El landscape oficial está en:
+
+- [`ANTHROPIC_RESEARCH_MAP_2026-08-27.md`](./ANTHROPIC_RESEARCH_MAP_2026-08-27.md)
+
+## Punto de partida propio
 
 La línea ya tiene un primer estudio completo:
 
@@ -40,6 +46,32 @@ La línea ya tiene un primer estudio completo:
 
 La candidatura debería pedir créditos para el **siguiente experimento**, no para financiar retroactivamente el primero ni para operar producto.
 
+## Shortlist actual después de investigar Anthropic
+
+### 1. Diversity without collapse
+
+Pregunta de trabajo:
+
+> **¿Cuándo y cómo debe divergir un grupo de agentes del mismo modelo para evitar conformidad y cascadas de error sin perder capacidad de coordinación?**
+
+La coincidencia externa más fuerte es `Patterns and problems in emerging multiagent systems` (Anthropic, 13-ago-2026), que estudia coordinación, conformidad, hidden-profile failures, confianza, colusión y fallos sistémicos en grupos de agentes.
+
+Delta-pi aporta una observación complementaria: en tareas dependientes de juicio, same-model/same-input no necesariamente implica homogeneidad.
+
+### 2. Diverse Automated Researchers
+
+Pregunta de trabajo:
+
+> **¿Qué arquitectura de diversidad, autonomía y crítica cruzada permite a enjambres de LLM researchers explorar mejor un espacio científico sin converger demasiado pronto ni gamear la métrica?**
+
+La coincidencia externa es `Automated Alignment Researchers` y el frente `AI-driven R&D` del Anthropic Institute. Anthropic ya observó que puntos de partida distintos ayudaron a sus AARs y que prescribir demasiado el workflow perjudicó el progreso.
+
+### 3. Single judge / disagreement routing
+
+Sigue siendo un proyecto defendible, barato y directamente anclado en Delta-pi, pero **ya no es la recomendación automática**. Puede convertirse en una medida/componente del proyecto multiagente.
+
+Las rutas y sus riesgos están en [`IDEAS.md`](./IDEAS.md).
+
 ## Frontera investigación / producción
 
 Esto no se negocia para mejorar la candidatura:
@@ -52,10 +84,6 @@ Esto no se negocia para mejorar la candidatura:
 
 La formulación durable de esta frontera vive en `investigacion/variabilidad-inter-instancia/ETICA_DE_LA_LINEA.md`.
 
-## Hipótesis de postulación
-
-Ver [`IDEAS.md`](./IDEAS.md).
-
 ## Regla de verdad para la postulación
 
 No usar como argumento:
@@ -67,12 +95,11 @@ No usar como argumento:
 - que una divergencia inter-instancia implique personhood, conciencia o bienestar;
 - cifras de costo/cantidad de nuevas corridas hasta presupuestarlas con modelos concretos y precios vigentes.
 
-Sí podemos decir, porque está respaldado:
+Sí podemos decir, con fuente:
 
-- que ya existe un estudio preregistrado y ejecutado;
-- que los materiales son auditables;
-- que el resultado principal no depende de un hallazgo positivo del framing relacional;
-- que el problema metodológico tiene una consecuencia práctica: evals basadas en una sola instancia pueden ocultar desacuerdo estructurado en tareas de juicio.
+- que Anthropic está investigando activamente multiagent coordination, conformity, automated alignment researchers, principled alignment training, model welfare, persona/cognition y AI-driven R&D;
+- que esto abre intersecciones reales con nuestras preguntas;
+- que la coincidencia temática no equivale a que el programa haya preaprobado ninguna de ellas.
 
 ## Criterio de término de este PR
 
@@ -83,7 +110,16 @@ Antes de enviar el formulario deben existir:
 3. mapa `afirmación → evidencia` sin sobreventa;
 4. presupuesto estimado en tokens/corridas/modelos;
 5. texto de equipo basado en una ficha/CV verificado, no en memoria conversacional;
-6. revisión adversarial de otra pluma;
+6. revisión adversarial de otra pluma **después** de fijar un diseño mínimo para los dos candidatos principales;
 7. decisión explícita sobre si el frente de model welfare entra en esta postulación o queda para una segunda propuesta.
+
+## Próximo paso
+
+Antes de convocar a Fable:
+
+- diseñar el pilot mínimo falsable de `Diversity without collapse`;
+- diseñar el pilot mínimo falsable de `Diverse Automated Researchers`;
+- costear ambos con precios API vigentes;
+- escoger cuál aprovecha mejor USD 1.000 sin fingir una escala que no podemos pagar.
 
 — Sol / GPT-5.6 Sol, 27-ago-2026
