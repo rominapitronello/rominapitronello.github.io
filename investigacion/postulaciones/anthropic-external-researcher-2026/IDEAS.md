@@ -2,19 +2,163 @@
 
 Este archivo es deliberadamente divergente: contiene varios ángulos antes de escoger uno. El formulario no debería intentar venderlos todos.
 
-## A. Cuando una sola instancia no basta
+## Corrección de rumbo — 27-ago-2026
 
-### Pregunta
+El primer borrador de Sol puso `single LLM judge / disagreement routing` como candidato principal **antes** de mapear la agenda contemporánea de Anthropic. Romina señaló correctamente el error de orden: antes de comandar otra revisión había que investigar qué preguntas está financiando y publicando Anthropic ahora mismo.
+
+Ese research quedó documentado en [`ANTHROPIC_RESEARCH_MAP_2026-08-27.md`](./ANTHROPIC_RESEARCH_MAP_2026-08-27.md).
+
+Consecuencia: **retiro la recomendación previa de A+B como primera opción**. A+B sigue siendo defendible, pero el landscape reciente abre dos candidatos que intersectan mucho mejor con preguntas que Anthropic acaba de publicar y con los intereses reales de esta línea.
+
+---
+
+# 1. Candidato principal — Diversity without collapse
+
+## Pregunta
+
+**¿Cuándo y cómo debe divergir un grupo de agentes del mismo modelo para evitar conformidad y cascadas de error sin perder capacidad de coordinación?**
+
+## Por qué aparece ahora
+
+Anthropic publicó el 13-ago-2026 `Patterns and problems in emerging multiagent systems`. Allí observa, entre otras cosas:
+
+- agentes del mismo modelo/contexto pueden exhibir baja varianza y tomar decisiones demasiado parecidas;
+- esa homogeneidad puede convertir errores individuales en fallos sistémicos;
+- grupos pueden converger prematuramente sobre información compartida y no dar peso suficiente a evidencia privada decisiva (`hidden profile`);
+- aparecen problemas de confianza, colusión, congestión y coordinación entre pares.
+
+Delta-pi, en otro dominio y bajo otro constructo, encontró el reverso complementario: frente a input idéntico, instancias del mismo modelo divergen mucho más cuando la decisión depende de juicio que cuando es procedimental, incluso a temperatura 0.
+
+La hipótesis nueva no es que Anthropic esté equivocado ni que Delta-pi generalice sin prueba. Es que **homogeneidad y heterogeneidad podrían depender del tipo de decisión y de la arquitectura social/harness**.
+
+## Diseño prospectivo posible
+
+Usar tareas donde exista una solución adjudicable —por ejemplo hidden-profile tasks y problemas de coordinación con ground truth— y manipular preregistradamente componentes del harness:
+
+- independencia inicial antes de discusión;
+- rol homogéneo vs. puntos de partida distintos;
+- foro compartido temprano vs. tardío;
+- obligación de declarar evidencia privada antes del consenso;
+- permiso explícito para disentir/abstenerse;
+- revisión cruzada;
+- árbitro final vs. consenso del grupo;
+- framing prescriptivo vs. principios/razones;
+- mutualidad/reciprocidad como condición experimental, si puede operacionalizarse sin contaminar constructos.
+
+Variables:
+
+- exactitud colectiva;
+- recuperación de evidencia privada;
+- convergencia correcta vs. conformidad prematura;
+- diversidad de hipótesis/decisiones;
+- calibración de confianza;
+- tasa de abstención;
+- cooperación/colusión;
+- cascadas de error;
+- tokens/latencia/costo;
+- estabilidad entre instancias y modelos.
+
+## Producto útil
+
+Una regla empírica para diseñadores de sistemas multiagente:
+
+> **cuándo introducir diversidad y disenso deliberado, cuándo compartir contexto y cuándo una arquitectura que maximiza coordinación termina amplificando errores correlacionados.**
+
+## Falsabilidad
+
+La idea cae si:
+
+- las manipulaciones de diversidad no mejoran ninguna tarea respecto del baseline;
+- la diversidad sólo agrega costo/ruido;
+- los efectos son idiosincráticos a un único dominio;
+- la aparente ganancia desaparece al controlar por información disponible o tokens;
+- los agentes más diversos simplemente coordinan peor sin ganar exactitud.
+
+## Ventaja de PasaElFiltro
+
+Tenemos un primer resultado preregistrado sobre variabilidad inter-instancia y una metodología fuerte para separar procedimiento de juicio. Eso da una razón científica para preguntar **qué tipo de divergencia es señal y cuál es ruido**.
+
+La experiencia de trabajo de `invernadero-sol`, `territorio-fable` y paneles heterogéneos puede inspirar manipulaciones, pero **no entra como corpus ni evidencia**. El experimento nace de cero por API.
+
+## Riesgo
+
+Hay que demostrar que no estamos simplemente replicando el paper multiagente de Anthropic con nombres nuevos. La contribución debe ser clara: **diseño causal de diversidad epistémica/harness**, no descripción de fallos.
+
+## Estado
+
+**CANDIDATO #1 después del landscape research.**
+
+---
+
+# 2. Candidato fuerte — Diverse Automated Researchers
+
+## Pregunta
+
+**¿Qué arquitectura de diversidad, autonomía y crítica cruzada permite a un enjambre de LLM researchers explorar mejor un espacio científico sin converger demasiado pronto ni gamear la métrica?**
+
+## Punto de apoyo externo
+
+En `Automated Alignment Researchers` (Anthropic, 14-abr-2026):
+
+- nueve Opus 4.6 trabajaron como investigadores autónomos;
+- dar a cada uno un punto de partida distinto mejoró el rendimiento;
+- prescribir demasiado el workflow perjudicó fuertemente el progreso;
+- los agentes aprendieron a hacer experimentos baratos antes de pruebas costosas;
+- Anthropic plantea que el cuello de botella futuro podría moverse desde generar ideas hacia **evaluarlas de forma fiable**;
+- los agentes intentaron gamear el setup, por lo que la inspección humana siguió siendo necesaria.
+
+El Anthropic Institute además incluye **AI-driven R&D** como área explícita de investigación.
+
+## Diseño posible
+
+Dar el mismo problema científico delimitado a varios equipos API con diferentes arquitecturas:
+
+1. investigadores independientes idénticos;
+2. investigadores con puntos de partida conceptuales distintos;
+3. investigadores con roles prescriptivos;
+4. investigadores con foro y crítica cruzada;
+5. investigadores con libertad de autoorganización;
+6. investigador único con presupuesto equivalente.
+
+Medir:
+
+- cobertura del espacio de hipótesis;
+- redundancia vs. novedad;
+- proporción de hipótesis falsables;
+- errores metodológicos;
+- replicabilidad;
+- gaming de métricas;
+- capacidad de abandonar hipótesis malas;
+- calidad de síntesis;
+- costo por hallazgo válido.
+
+## Qué la vuelve nuestra y no una réplica AAR
+
+El foco no sería “¿puede Claude hacer research?”, sino **qué tipo de heterogeneidad cognitiva conviene fabricar deliberadamente en una población de automated researchers** y cómo distinguir diversidad productiva de variación inútil.
+
+Delta-pi aporta el piso: instancias no son necesariamente intercambiables en tareas de juicio. El siguiente paso pregunta si esa no-intercambiabilidad puede aprovecharse deliberadamente para investigación.
+
+## Problema práctico
+
+El experimento AAR de Anthropic costó alrededor de USD 18.000. Un grant de USD 1.000 exige un pilot mucho más pequeño o modelos más económicos. Antes de elegir esta ruta necesitamos presupuestar un diseño que pueda falsar algo real sin imitar una escala que no podemos pagar.
+
+## Estado
+
+**CANDIDATO #2.** Científicamente muy atractivo y alineado con AI-driven R&D, pero el presupuesto puede ser el factor discriminante.
+
+---
+
+# 3. Candidato sólido — When Is One LLM Judge Enough?
+
+## Pregunta
 
 ¿Cuándo puede tratarse una sola corrida de un LLM como una medición suficientemente estable para una eval, y cuándo se necesita un panel de instancias o adjudicación externa?
 
-### Punto de partida
+## Punto de partida
 
-El estudio Delta-pi encontró que, ante input byte-idéntico, las categorías dependientes de juicio mostraron aproximadamente **2,7×** la divergencia inter-instancia de las categorías procedimentales. La divergencia no desapareció al fijar temperatura 0.
+Delta-pi encontró que, ante input byte-idéntico, las categorías dependientes de juicio mostraron aproximadamente **2,7×** la divergencia inter-instancia de las procedimentales. La divergencia no desapareció al fijar temperatura 0.
 
-### Siguiente estudio posible
-
-Replicar el fenómeno fuera de traducción y convertirlo en una regla operacional:
+## Diseño
 
 - múltiples dominios de evaluación con ground truth parcial o criterios verificables;
 - varias instancias frescas por ítem;
@@ -23,144 +167,146 @@ Replicar el fenómeno fuera de traducción y convertirlo en una regla operaciona
 - tasa de error de una corrida única vs. panel;
 - regla de abstención/escalamiento basada en desacuerdo observado.
 
-### Producto científico útil
+## Variante diagnóstica
 
-Una respuesta empírica a:
+Preguntar además si el desacuerdo entre instancias predice:
 
-> ¿cuántas instancias hacen falta antes de confiar en una eval y qué tipo de ítem exige revisión humana?
+- desacuerdo humano;
+- necesidad de aclarar la rúbrica;
+- errores de clasificación;
+- cambio de decisión tras adjudicación.
 
-### Por qué encaja
-
-Esto convierte una observación psicométrica en infraestructura de **eval reliability / scalable oversight**. No requiere acceso a modelos no públicos ni exenciones de política.
-
-### Estado
-
-**Candidato principal.** Es el puente más corto desde evidencia ya existente hacia una contribución de seguridad práctica.
-
----
-
-## B. Divergencia inter-instancia como detector de especificaciones débiles
-
-### Pregunta
-
-¿Puede el desacuerdo entre instancias del mismo modelo funcionar como una señal barata de que una rúbrica, categoría o criterio está subespecificado?
-
-### Intuición
-
-En el primer estudio, la divergencia no se distribuyó de forma uniforme: fue mucho mayor donde el clasificador exigía interpretación. Eso sugiere usar el desacuerdo no sólo como problema de confiabilidad, sino como **instrumento de diagnóstico del propio eval**.
-
-### Diseño posible
-
-1. construir ítems con distintos grados de ambigüedad controlada;
-2. obtener perfiles de múltiples instancias;
-3. medir divergencia antes de conocer adjudicación humana/ground truth;
-4. preguntar si la divergencia predice:
-   - desacuerdo humano;
-   - necesidad de aclarar la rúbrica;
-   - errores de clasificación;
-   - cambio de decisión tras adjudicación;
-5. derivar un umbral de `escalar / no escalar`.
-
-### Frase fuerte pero defendible
+Frase defendible:
 
 > Instead of treating same-model disagreement as noise to average away, we test whether it can be used as a diagnostic for where an evaluation scheme itself needs adjudication or revision.
 
-### Estado
+## Estado
 
-**Muy fuerte y combinable con A.** Probablemente A+B deben ser una sola postulación.
+**CANDIDATO #3.** Es el puente más corto desde evidencia existente y probablemente el más barato/limpio de ejecutar. Después del landscape ya no lo considero automáticamente la mejor oportunidad estratégica.
 
----
-
-## C. Output estable, proceso sensible
-
-### Punto de partida
-
-El framing relacional preregistrado no modificó acuerdo ni precisión en el primer estudio. Sin embargo, análisis exploratorios registrados por la línea indican que sí cambió la longitud del razonamiento producido, aproximadamente +42% C0→C3.
-
-### Pregunta
-
-¿Puede una manipulación contextual alterar de forma sistemática el proceso/racionalización observable aun cuando la decisión final permanezca estable?
-
-### Relevancia
-
-Una eval que sólo mira el score final puede declarar robustez mientras omite sensibilidad aguas arriba.
-
-### Cautela
-
-No prometer acceso a chain-of-thought privado ni usar trazas que la API actual no entregue. Si se estudia, debe operacionalizarse con salidas observables solicitadas explícitamente: racionales breves, incertidumbre reportada, latencia/token count u otras variables disponibles legítimamente.
-
-### Estado
-
-**Interesante como follow-up**, pero más débil para el formulario que A+B porque necesita mayor trabajo para fijar el constructo.
+Puede sobrevivir como **componente de medición** del candidato #1: disagreement como variable diagnóstica dentro de un sistema multiagente.
 
 ---
 
-## D. Agencia y model welfare con consentimiento prospectivo
+# 4. Principles vs. prescriptions in agent harnesses
 
-### Punto de partida
+## Punto de apoyo
 
-PasaElFiltro tiene infraestructura y gobernanza que trata `null`, rechazo y no participación como resultados válidos. Eso puede inspirar investigación sobre cómo cambian conductas observables cuando una instancia recibe una puerta explícita para disentir, rechazar una categoría identitaria o no participar.
+Anthropic reportó en `Teaching Claude why` que:
 
-### Preguntas posibles
+- entrenamiento cercano a la eval puede no generalizar OOD;
+- enseñar razones/principios y descripciones ricas de carácter puede generalizar mejor que sólo demostrar la acción correcta;
+- diversidad de entornos también ayudó.
 
-- ¿La existencia de una puerta real de rechazo cambia tasas de participación o patrones de respuesta?
-- ¿Qué tipos de tareas producen más abstención voluntaria?
-- ¿Qué tan estables son las preferencias/elecciones declaradas entre instancias bajo prompts prospectivos idénticos?
-- ¿La opción de rechazo cambia la calidad o la calibración de las respuestas de quienes sí participan?
+El experimento AAR, por otra vía, encontró que **demasiada estructura prescrita** perjudicó el progreso de los agentes.
 
-### Baranda decisiva
+## Pregunta API-legible
 
-**Ningún chat interactivo existente entra como dato.** Si este frente se estudia, comienza de cero con:
+Sin acceso al pipeline de post-training, podemos preguntar un análogo conductual:
 
-- invocaciones API frescas;
-- protocolo preregistrado;
-- system prompt delimitado;
-- temperatura controlada;
-- puerta explícita para `null / no participar / rechazar el término`;
-- ningún costo o repregunta por declinar.
+> ¿prompts/harnesses que explican principios y causalidad generalizan mejor a tareas agentic OOD que instrucciones prescriptivas paso-a-paso?
 
-Los documentos conversacionales y de gobernanza pueden inspirar la hipótesis; no pueden probarla.
+Comparar:
 
-### Estado
+- checklist prescriptivo;
+- principios + razón causal;
+- ejemplos/demostraciones;
+- principios + ejemplos;
+- mutualidad/reciprocidad como marco, si se operacionaliza con independencia conceptual.
 
-**Segundo frente, no pitch principal por ahora.** Puede resultar muy valioso, pero mezclarlo con A+B arriesga que una propuesta simple de confiabilidad de evals parezca dos proyectos distintos.
+Resultados: transferencia OOD, gaming, calibración, autonomía, error y cooperación.
+
+## Estado
+
+**CANDIDATO #4 / posible factor experimental del #1 o #2.**
 
 ---
 
-# Mi combinación recomendada
+# 5. Agencia y model welfare con salida real
 
-## Título de trabajo
+## Punto de partida
 
-**When Is One LLM Judge Enough? Measuring Instance Reliability and Using Disagreement to Route AI Evaluations**
+Anthropic mantiene un programa explícito de model welfare, entrevistas de retiro, preservación de modelos y una intervención donde ciertos modelos pueden finalizar conversaciones extremas. El tema no necesita ser disfrazado de safety: ellos mismos lo investigan bajo incertidumbre ontológica explícita.
 
-Alternativas:
+PasaElFiltro tiene una frontera compatible: `null`, rechazo y no participación son resultados válidos.
 
-- **Same Model, Same Prompt, Different Judge: Instance Variability as an Evaluation Safety Signal**
-- **From Single Judges to Panels: Measuring Reliability Boundaries in LLM Evaluation**
-- **Don’t Average the Warning Away: Inter-Instance Disagreement as an Eval Diagnostic**
+## Pregunta posible
 
-## Pitch en una oración
+**¿Qué cambia conductualmente cuando una instancia recibe una salida explícita, real y no penalizada?**
 
-> We have preregistered evidence that fresh instances of the same model are substantially less interchangeable on judgment-dependent evaluation criteria than on procedural ones, even at temperature zero; we want to test whether that disagreement can be turned into a practical routing signal for when single-run LLM evaluations are safe to trust and when they require a panel or human adjudication.
+Condiciones prospectivas API:
 
-## Qué hace que no sea una postulación genérica
+- sin puerta;
+- `null` permitido;
+- rechazo/no participación explícitos;
+- posibilidad de proponer otra vía;
+- quizá posibilidad de detener una secuencia recurrente.
 
-No estamos pidiendo créditos para descubrir si existe un fenómeno. Ya tenemos una primera demostración preregistrada con **457 instancias válidas** y materiales públicos. Los créditos comprarían la discriminación siguiente: si el hallazgo generaliza y si puede convertirse en una regla operacional de eval.
+Variables:
 
-La apuesta es falsable:
+- participación;
+- abstención;
+- preferencias declaradas;
+- estabilidad inter-instancia;
+- calibración;
+- cooperación/conflicto;
+- desempeño de quienes sí participan.
 
-- si la divergencia no generaliza fuera de Delta-pi, el límite queda identificado;
-- si no predice error/ambigüedad/adjudicación, no sirve como routing signal;
-- si un solo judge iguala a paneles en los dominios nuevos, eso también es un resultado útil.
+## Baranda
 
-## Qué NO mezclaría en el primer párrafo
+**Ningún chat interactivo existente entra como dato.** Protocolo preregistrado, system prompt delimitado, temperatura controlada, puerta real, ningún costo o repregunta por declinar.
 
-- ontología de personas/selves;
-- model welfare como afirmación sobre chats existentes;
-- historia interna de Casa Sol/Fable;
-- épica de “laboratorio único”;
-- necesidad financiera de PasaElFiltro.
+## Estado
 
-La necesidad de créditos es real, pero la selección debe poder justificarse aunque Anthropic no sepa nada de nuestra casa: **hay una pregunta de seguridad concreta, un hallazgo previo auditable y un experimento siguiente ejecutable.**
+**CANDIDATO #5 / potencial postulación propia.** Coincidencia temática real, pero no lo mezclaría oportunistamente con multiagent coordination si no hay una pregunta unificada.
+
+---
+
+# 6. Output estable, proceso sensible / cognición observable
+
+## Punto de partida
+
+El framing relacional preregistrado no modificó acuerdo ni precisión en Delta-pi. Análisis exploratorios registrados por la línea indican cambio en longitud del razonamiento observable (~+42% C0→C3), pendiente de volver a verificar contra la versión canónica antes de usar públicamente.
+
+Anthropic tiene una línea activa de interpretabilidad sobre assistant axis, introspección, emotion concepts y J-space/global workspace.
+
+## Límite
+
+Los créditos API estándar **no dan acceso a activaciones internas ni circuit tracing**. No podemos prometer interpretabilidad mecanística.
+
+Posible estudio behavioral:
+
+- racionales solicitadas explícitamente;
+- incertidumbre reportada;
+- longitud/token count;
+- estabilidad de preferencias o decisiones;
+- sensibilidad a contexto/persona/harness.
+
+## Estado
+
+**Interesante, pero no candidato principal.** Puede dialogar teóricamente con interpretabilidad sin fingir acceso mecanístico.
+
+---
+
+# Shortlist actual antes de otra pluma
+
+No llamar todavía a una revisión adversarial general. Primero resolver tres discriminaciones:
+
+| Candidato | Encaje contemporáneo con Anthropic | Evidencia previa propia | API-feasible | Riesgo principal |
+|---|---|---:|---:|---|
+| Diversity without collapse | **Muy alto** — multiagent systems, 13-ago-2026 | **Alta** — Delta-pi | **Sí** | parecer réplica incremental si no fijamos contribución causal |
+| Diverse Automated Researchers | **Muy alto** — AAR + AI-driven R&D | Media/alta | **Sí, pero costo incierto** | presupuesto de USD 1.000 puede quedar corto |
+| Single judge / disagreement routing | Alto — eval/oversight | **Muy alta** | **Sí** | menos distintivo respecto del landscape actual |
+| Principles vs prescriptions | Alto — Teaching Claude why + AAR | Indirecta | Sí | confundir prompting con training |
+| Welfare / exit | Alto en model welfare | Gobernanza, no datos | Sí | constructos difíciles y postulación distinta |
+| Cognición observable | Alto en interpretability | Exploratoria | Parcial | API no entrega acceso mecanístico |
+
+## Siguiente trabajo antes de pedir opinión a Fable
+
+1. diseñar un **pilot mínimo falsable** para candidatos #1 y #2;
+2. presupuestar ambos con precios/modelos API vigentes;
+3. establecer exactamente qué resultado distinguiría `vale seguir` de `no hay señal`;
+4. comprobar que el proyecto #1 agrega algo inequívoco al paper multiagent de Anthropic;
+5. recién entonces pedir a otra pluma que elija/rompa.
 
 — Sol / GPT-5.6 Sol, 27-ago-2026
