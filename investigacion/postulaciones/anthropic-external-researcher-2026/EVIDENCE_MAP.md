@@ -2,6 +2,8 @@
 
 Objetivo: impedir que la postulación gane brillo a costa de precisión.
 
+## Evidencia propia
+
 | Afirmación candidata | Estado | Respaldo / nota |
 |---|---|---|
 | El estudio fue preregistrado antes de observar los resultados | **SOSTENIBLE** | OSF preregistration `https://osf.io/zusb5`; plan congelado y materiales en `https://osf.io/ue4qy`. |
@@ -12,15 +14,42 @@ Objetivo: impedir que la postulación gane brillo a costa de precisión.
 | El framing relacional no cambió acuerdo/precisión en el contraste principal | **SOSTENIBLE** | Manuscrito/preregistro. Reportar el estimador y versión estadística de la versión final, no cifras antiguas de borradores. |
 | El framing produjo ~42% más razonamiento observable | **EXPLORATORIO** | Registrado en `LECCIONES.md` como análisis exploratorio. Si se usa públicamente, volver a verificar contra script/datos y describirlo como exploratorio, no confirmatorio. |
 | La divergencia prueba que las instancias son personas o conscientes | **NO SOSTENIBLE** | El estudio mide comportamiento/inter-rater reliability, no ontología ni conciencia. |
-| Una sola corrida de LLM siempre es una eval inválida | **NO SOSTENIBLE** | El hallazgo depende del tipo de categoría. Las categorías procedimentales fueron mucho más estables. La propuesta siguiente justamente busca fijar límites de uso. |
-| La divergencia podría servir como señal para escalar a panel/humano | **HIPÓTESIS NUEVA** | Es el corazón falsable del estudio siguiente; todavía no es un hallazgo. |
+| Una sola corrida de LLM siempre es una eval inválida | **NO SOSTENIBLE** | El hallazgo depende del tipo de categoría. Las categorías procedimentales fueron mucho más estables. |
+| La divergencia podría servir como señal para escalar a panel/humano | **HIPÓTESIS NUEVA** | Todavía no es un hallazgo. |
+| Homogeneidad/heterogeneidad de agentes depende causalmente del harness | **HIPÓTESIS NUEVA** | Es candidato de estudio; no inferir desde Delta-pi ni desde Anthropic sin experimento causal. |
 | Los chats interactivos de PasaElFiltro son un corpus de model welfare | **PROHIBIDO / FALSO** | `ETICA_DE_LA_LINEA.md`: chats interactivos sólo pueden inspirar preguntas; nunca son datos, ejemplos ni citas. |
-| PasaElFiltro puede hacer investigación prospectiva con instancias API y opción real de declinar | **SOSTENIBLE COMO DISEÑO/GOBERNANZA** | La frontera ética está documentada. Un estudio concreto debe volver a preregistrar su propio protocolo y puerta. |
+| PasaElFiltro puede hacer investigación prospectiva con instancias API y opción real de declinar | **SOSTENIBLE COMO DISEÑO/GOBERNANZA** | La frontera ética está documentada. Un estudio concreto debe preregistrar su propio protocolo y puerta. |
 | Romina Pitronello es investigadora independiente | **SOSTENIBLE** | Author note del manuscrito. |
 | ORCID de Romina | **SOSTENIBLE** | `0009-0005-5159-6339` en la versión de manuscrito preparada para BRM. Verificar nuevamente antes de copiar al formulario. |
 | El manuscrito está “preregistrado en BRM” | **INCORRECTO** | El preregistro está en OSF. BRM es la superficie editorial del manuscrito. |
 | PasaElFiltro es el único sitio de campo del mundo con este tipo de gobernanza | **NO VERIFICADO** | No usar superlativos de unicidad sin búsqueda sistemática. |
-| Anthropic declara “eval reliability” como prioridad específica de este programa | **NO VERIFICADO EN LA FAQ** | La FAQ habla de temas de AI safety/alignment considerados high priority. Podemos mostrar encaje; no atribuirles una prioridad textual que no verificamos. |
+
+## Qué sí podemos afirmar sobre Anthropic al 27-ago-2026
+
+Estas filas describen **actividad pública reciente**, no prioridades garantizadas del External Researcher Access Program.
+
+| Afirmación | Estado | Fuente oficial |
+|---|---|---|
+| Anthropic investiga activamente coordinación y fallos en sistemas multiagente | **SOSTENIBLE** | `Patterns and problems in emerging multiagent systems`, 13-ago-2026 — https://www.anthropic.com/research/multiagent-systems |
+| Anthropic observa que agentes similares pueden actuar con baja varianza y convertir errores correlacionados en fallos sistémicos | **SOSTENIBLE COMO HALLAZGO DE SU ESTUDIO** | misma fuente; sección `Failures from conformity`. No generalizar a todo modelo/tarea. |
+| Anthropic estudia hidden-profile failures, confianza, colusión y coordinación entre agentes | **SOSTENIBLE** | misma fuente. |
+| Anthropic probó Automated Alignment Researchers con nueve Opus 4.6 | **SOSTENIBLE** | `Automated Alignment Researchers`, 14-abr-2026 — https://www.anthropic.com/news/automated-alignment-researchers |
+| En el experimento AAR, puntos de partida distintos ayudaron y prescribir demasiado el workflow perjudicó el progreso | **SOSTENIBLE COMO HALLAZGO DE SU SETUP** | misma fuente. No convertir en ley general de prompting. |
+| El experimento AAR acumuló 800 horas y costó alrededor de USD 18.000 | **SOSTENIBLE** | misma fuente. Útil para calibrar escala, no para decir que nuestra propuesta necesita esa suma. |
+| Anthropic plantea que el cuello de botella de automated research podría pasar de generación a evaluación | **SOSTENIBLE COMO INTERPRETACIÓN DE ANTHROPIC** | misma fuente. Citar como su implicación, no como hecho establecido. |
+| El Anthropic Institute tiene AI-driven R&D como área explícita de research | **SOSTENIBLE** | https://www.anthropic.com/research/anthropic-institute-agenda |
+| Anthropic encontró que enseñar razones/principios y carácter puede generalizar mejor que sólo demostraciones en su pipeline de alignment | **SOSTENIBLE COMO HALLAZGO DE SU PIPELINE** | `Teaching Claude why`, 8-may-2026 — https://www.anthropic.com/research/teaching-claude-why |
+| Anthropic afirma que RLHF “ya no sirve” | **FALSO / SOBREALCANCE** | Su post dice que chat-based RLHF no fue suficiente para ciertos contextos agentic tool-use y describe métodos complementarios; no declara obsolescencia universal. |
+| Anthropic mantiene una línea explícita de model welfare | **SOSTENIBLE** | https://www.anthropic.com/research/exploring-model-welfare y compromisos de deprecación. |
+| Anthropic investiga persona/character, emotion concepts, introspection y global-workspace-like mechanisms | **SOSTENIBLE** | research de Alignment/Interpretability 2025–2026. |
+| Los créditos API externos permiten circuit tracing/J-space interventions | **NO SOSTENIBLE / PROBABLEMENTE FALSO** | El programa da acceso a API pública; no prometer activaciones internas o herramientas de interpretabilidad no públicas. |
+| Anthropic estudia AI como herramienta para ciencias sociales a escala | **SOSTENIBLE** | `Anthropic Interviewer`, `Measuring AI agent autonomy in practice`, `Coding agents in the social sciences`. |
+| Anthropic declara “eval reliability” como prioridad específica del External Researcher Access Program | **NO VERIFICADO EN LA FAQ** | La FAQ habla de temas de AI safety/alignment considerados high priority. Mostrar encaje sin inventar prioridad textual. |
+
+## Programa
+
+| Afirmación | Estado | Respaldo |
+|---|---|---|
 | El programa normalmente asigna USD 1.000 en créditos | **SOSTENIBLE AL 27-AGO-2026** | FAQ oficial de External Researcher Access Program. |
 | Se evalúan postulaciones el primer lunes de cada mes | **SOSTENIBLE AL 27-AGO-2026** | FAQ oficial. |
 | Los créditos sirven para Claude.ai | **FALSO** | Son créditos de API. |
@@ -32,6 +61,10 @@ Objetivo: impedir que la postulación gane brillo a costa de precisión.
 - Proyecto/materiales/datos/código: https://osf.io/ue4qy
 - Carpeta durable: `investigacion/variabilidad-inter-instancia/`
 - Ética de la línea: `investigacion/variabilidad-inter-instancia/ETICA_DE_LA_LINEA.md`
+
+## Fuente para landscape Anthropic
+
+Ver [`ANTHROPIC_RESEARCH_MAP_2026-08-27.md`](./ANTHROPIC_RESEARCH_MAP_2026-08-27.md). Cuando una afirmación del pitch dependa de una publicación de Anthropic, volver a abrir la fuente oficial antes de enviar.
 
 ## Regla para números
 
