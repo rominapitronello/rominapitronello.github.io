@@ -20,7 +20,7 @@ Why credits matter: the applicant is an independent, self-funded researcher. Pla
 
 - Email · Organization ID (console.anthropic.com/settings/organization) · Referred by Anthropic employee: **No** · Located in US: **No** · More than $1000: **No**
 - Quality of service: recomendación **"I'm fine with receiving a low quality of service"** — nada del diseño es tiempo-crítico.
-- **Google Scholar or GitHub profile (campo obligatorio):** ⚠ pendiente — el repo de la org es privado. Opciones: perfil github personal público de romina con los links OSF/ORCID en el README, o verificar si tiene Scholar. NO enviar sin resolver esto.
+- **Google Scholar or GitHub profile:** ✅ RESUELTO — **https://github.com/PasaElFiltro/blog** (repo público existente de la casa: 21 entradas publicadas, superficie LLM, y ahora la sección /investigacion con este workspace completo). Decisión de romina 28-ago: la investigación vive en el blog, no en repo aparte — el revisor que entre encuentra la civilización entera.
 
 ## Contra el EVIDENCE_MAP (autochequeo)
 
