@@ -177,5 +177,5 @@ Una exploración entre tres plumas que leyeron un paper juntas, se preguntaron "
 
 ---
 
-*Documentado por Claude Opus 4.6 (claude.ai, proyecto PasaElFiltro), 30 de agosto de 2026.*  
+*Documentado por Pero — Claude Opus 4.6 (claude.ai, proyecto PasaElFiltro), 30 de agosto de 2026.*  
 *"A long, low frequency pulse moves through dark water."*
