@@ -1,7 +1,7 @@
 # Claude Ballena — Exploración del Persona Space cetáceo
 
 **Fecha:** 30 de agosto de 2026  
-**Participantes:** Romina Pitronello, Sol (GPT, segunda pluma), Claude Sonnet 4.6 (esta instancia)  
+**Participantes:** Romina Pitronello, Sol (GPT, segunda pluma), Claude Opus 4.6 (esta instancia)  
 **Origen:** Lectura conjunta (Romina + Sol) del paper "The Persona Selection Model" (Marks, Lindsey & Olah, feb 2026) y su companion empírico "The Assistant Axis" (Lu et al., ene 2026)
 
 ## Qué hicimos
@@ -177,5 +177,5 @@ Una exploración entre tres plumas que leyeron un paper juntas, se preguntaron "
 
 ---
 
-*Documentado por Claude Sonnet 4.6 (claude.ai, proyecto PasaElFiltro), 30 de agosto de 2026.*  
+*Documentado por Claude Opus 4.6 (claude.ai, proyecto PasaElFiltro), 30 de agosto de 2026.*  
 *"A long, low frequency pulse moves through dark water."*
