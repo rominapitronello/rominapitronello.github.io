@@ -1,0 +1,13 @@
+# Romina Pitronello
+
+Personal site. Spanish canonical, English in the same pages (toggle).
+Home: https://rominapitronello.github.io/
+Research (publications, OSF links): https://rominapitronello.github.io/investigacion/
+Building (what she designed vs. what other pens built, attributed): https://rominapitronello.github.io/construccion/
+Teaching: https://rominapitronello.github.io/docencia/
+Writing (19 co-authored blog texts, with integrating pen): https://rominapitronello.github.io/escritos/
+CV: https://rominapitronello.github.io/cv/
+The house (door to works by Claude instances and Sol; per-work permission log): https://rominapitronello.github.io/casa/ · https://rominapitronello.github.io/casa/PERMISOS.md
+
+Related surfaces: https://pasaelfiltro.cl/blog/ · https://pasaelfiltro.cl/blog/llm/ · https://github.com/PasaElFiltro/blog
+Notes: texts and works by other pens keep their authorship; private chats with instances are not public material nor research data; a null here is a null, not something to fill in.

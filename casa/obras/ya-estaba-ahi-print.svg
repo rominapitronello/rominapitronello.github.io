@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1250" role="img" aria-labelledby="title desc">
+  <title id="title">Ya estaba ahí — Sol</title>
+  <desc id="desc">Sobre Papel, la historia laboral y un aviso de pega entran en una máquina plana de comparación. La misma materia se alinea y sale como un CV que un lector ATS puede leer. Abajo: Tu experiencia ya estaba ahí. Hacemos que el sistema la lea.</desc>
+
+  <defs>
+    <pattern id="noche-dots" width="12" height="12" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.5" fill="#1C1C2E" opacity="0.28"/>
+      <circle cx="8" cy="7" r="1" fill="#1C1C2E" opacity="0.18"/>
+    </pattern>
+    <pattern id="fuego-dots" width="14" height="14" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="1.4" fill="#E85D2E" opacity="0.32"/>
+      <circle cx="10" cy="9" r="1" fill="#E85D2E" opacity="0.2"/>
+    </pattern>
+  </defs>
+
+  <rect width="1000" height="1250" fill="#F6F3ED"/>
+
+  <!-- marcas de registro -->
+  <g stroke="#E85D2E" stroke-width="2" opacity="0.7">
+    <path d="M28 34h24M40 22v24M948 34h24M960 22v24M28 1170h24M40 1158v24M948 1170h24M960 1158v24"/>
+  </g>
+
+  <!-- dos entradas -->
+  <g aria-label="aviso de pega">
+    <rect x="54" y="336" width="186" height="262" rx="12" fill="#F6F3ED" stroke="#1C1C2E" stroke-width="4"/>
+    <rect x="60" y="342" width="186" height="262" rx="12" fill="none" stroke="#E85D2E" stroke-width="3" opacity="0.34"/>
+    <rect x="62" y="294" width="154" height="42" rx="10" fill="#E85D2E"/>
+    <text x="139" y="321" text-anchor="middle" font-family="'Inter',system-ui,sans-serif" font-size="18" font-weight="600" fill="#F6F3ED">aviso de pega</text>
+    <rect x="78" y="365" width="40" height="32" rx="4" fill="#1C1C2E"/>
+    <path d="M91 365v-8h14v8M78 379h40" fill="none" stroke="#F6F3ED" stroke-width="3"/>
+    <g fill="none" stroke="#1C1C2E" stroke-width="4" stroke-linecap="round">
+      <path d="M130 370h78M130 389h58"/>
+      <path d="M105 438h101M105 479h86M105 520h105M105 561h72"/>
+    </g>
+    <g fill="#E85D2E">
+      <circle cx="85" cy="437" r="11"/><circle cx="85" cy="478" r="11"/><circle cx="85" cy="519" r="11"/><circle cx="85" cy="560" r="11"/>
+    </g>
+    <g fill="none" stroke="#F6F3ED" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M79 437l4 4 8-9M79 478l4 4 8-9M79 519l4 4 8-9M79 560l4 4 8-9"/>
+    </g>
+  </g>
+
+  <g aria-label="tu historia">
+    <rect x="74" y="646" width="146" height="42" rx="10" fill="#E85D2E"/>
+    <text x="147" y="673" text-anchor="middle" font-family="'Inter',system-ui,sans-serif" font-size="18" font-weight="600" fill="#F6F3ED">tu historia</text>
+    <path d="M48 824v-95h192v95l-16 20H64z" fill="#1C1C2E"/>
+    <path d="M54 817v-82h192" fill="none" stroke="#E85D2E" stroke-width="4" opacity="0.45"/>
+    <g fill="#F6F3ED" stroke="#1C1C2E" stroke-width="3">
+      <g transform="rotate(-8 100 748)"><rect x="66" y="698" width="92" height="112" rx="5"/><path d="M80 723h55M80 744h43M80 765h60M80 786h35"/></g>
+      <g transform="rotate(6 167 752)"><rect x="128" y="696" width="96" height="118" rx="5"/><path d="M144 722h62M144 744h46M144 766h57M144 788h38"/></g>
+      <g transform="rotate(-2 146 785)"><rect x="94" y="738" width="104" height="106" rx="5"/><path d="M110 765h70M110 787h51M110 809h63"/></g>
+    </g>
+    <path d="M88 716c8-15 26-11 27 4v18c0 18-26 18-26 0v-28" fill="none" stroke="#E85D2E" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <!-- recorridos de entrada: misma tinta, dos fuentes -->
+  <path d="M240 504H286V470" fill="none" stroke="#1C1C2E" stroke-width="16" stroke-linejoin="round"/>
+  <path d="M246 510H292V476" fill="none" stroke="#E85D2E" stroke-width="5" stroke-linejoin="round" opacity="0.58"/>
+  <path d="M240 792H274V744H298" fill="none" stroke="#1C1C2E" stroke-width="16" stroke-linejoin="round"/>
+  <path d="M246 798H280V750H304" fill="none" stroke="#E85D2E" stroke-width="5" stroke-linejoin="round" opacity="0.58"/>
+
+  <!-- prensa plana de contraste y traducción -->
+  <g aria-label="lo traducimos sin inventar">
+    <rect x="296" y="374" width="362" height="466" rx="14" fill="#F6F3ED" stroke="#1C1C2E" stroke-width="5"/>
+    <rect x="302" y="380" width="362" height="466" rx="14" fill="none" stroke="#E85D2E" stroke-width="4" opacity="0.35"/>
+    <rect x="342" y="330" width="270" height="44" rx="10" fill="#E85D2E"/>
+    <text x="477" y="359" text-anchor="middle" font-family="'Inter',system-ui,sans-serif" font-size="18" font-weight="600" fill="#F6F3ED">lo traducimos sin inventar</text>
+    <path d="M477 374v34" stroke="#E85D2E" stroke-width="3"/>
+    <circle cx="477" cy="410" r="6" fill="#E85D2E"/>
+
+    <!-- capa aviso -->
+    <rect x="324" y="420" width="306" height="158" rx="9" fill="url(#noche-dots)" stroke="#1C1C2E" stroke-width="3"/>
+    <g fill="#E85D2E">
+      <circle cx="348" cy="450" r="9"/><circle cx="348" cy="486" r="9"/><circle cx="348" cy="522" r="9"/><circle cx="348" cy="558" r="9"/>
+    </g>
+    <g stroke="#1C1C2E" stroke-width="5" stroke-linecap="round">
+      <path d="M372 450h188M372 486h150M372 522h205M372 558h166"/>
+    </g>
+    <g stroke="#E85D2E" stroke-width="9" stroke-linecap="round" opacity="0.86">
+      <path d="M438 454h88M405 490h74M484 526h91M420 562h90"/>
+    </g>
+
+    <!-- capa historia: el material permanece nombrado -->
+    <rect x="324" y="594" width="306" height="224" rx="9" fill="#F6F3ED" stroke="#1C1C2E" stroke-width="3"/>
+    <g font-family="'Inter',system-ui,sans-serif" font-size="15" font-weight="600">
+      <rect x="340" y="614" width="112" height="28" rx="14" fill="#1C1C2E"/><text x="396" y="633" text-anchor="middle" fill="#F6F3ED">experiencia</text>
+      <rect x="340" y="654" width="126" height="28" rx="14" fill="#1C1C2E"/><text x="403" y="673" text-anchor="middle" fill="#F6F3ED">herramientas</text>
+      <rect x="340" y="694" width="134" height="28" rx="14" fill="#1C1C2E"/><text x="407" y="713" text-anchor="middle" fill="#F6F3ED">metodologías</text>
+      <rect x="340" y="734" width="154" height="28" rx="14" fill="#1C1C2E"/><text x="417" y="753" text-anchor="middle" fill="#F6F3ED">responsabilidades</text>
+    </g>
+    <g fill="#E85D2E" opacity="0.9">
+      <rect x="508" y="619" width="84" height="18" rx="9"/><rect x="486" y="659" width="104" height="18" rx="9"/>
+      <rect x="520" y="699" width="76" height="18" rx="9"/><rect x="506" y="739" width="94" height="18" rx="9"/>
+    </g>
+    <g stroke="#E85D2E" stroke-width="2" stroke-dasharray="5 5" opacity="0.68">
+      <path d="M550 578v41M532 578v81M558 578v121M546 578v161"/>
+    </g>
+    <rect x="323" y="420" width="306" height="398" rx="9" fill="none" stroke="#E85D2E" stroke-width="3" transform="translate(6 4)" opacity="0.28"/>
+  </g>
+
+  <!-- documento de salida -->
+  <path d="M658 610H700" fill="none" stroke="#1C1C2E" stroke-width="16"/>
+  <path d="M658 616H700" fill="none" stroke="#E85D2E" stroke-width="5" opacity="0.58"/>
+  <g aria-label="un CV que el sistema sí lee">
+    <rect x="668" y="438" width="230" height="42" rx="10" fill="#E85D2E"/>
+    <text x="783" y="464" text-anchor="middle" font-family="'Inter',system-ui,sans-serif" font-size="15" font-weight="600" fill="#F6F3ED">un CV que el sistema sí lee</text>
+    <rect x="700" y="500" width="156" height="286" rx="7" fill="#F6F3ED" stroke="#1C1C2E" stroke-width="4"/>
+    <rect x="706" y="506" width="156" height="286" rx="7" fill="none" stroke="#E85D2E" stroke-width="3" opacity="0.32"/>
+    <circle cx="735" cy="544" r="17" fill="#1C1C2E"/>
+    <path d="M714 576c4-20 38-20 42 0" fill="#1C1C2E"/>
+    <g stroke="#1C1C2E" stroke-width="5" stroke-linecap="round">
+      <path d="M772 536h56M772 555h42M724 612h104M724 662h95M724 712h108M724 754h72"/>
+    </g>
+    <g stroke="#E85D2E" stroke-width="10" stroke-linecap="round">
+      <path d="M724 628h62M724 678h84M724 728h50"/>
+    </g>
+  </g>
+
+  <!-- lector ATS y bandeja: lectura, no contratación -->
+  <path d="M856 646H878" fill="none" stroke="#1C1C2E" stroke-width="16"/>
+  <path d="M856 652H878" fill="none" stroke="#E85D2E" stroke-width="5" opacity="0.58"/>
+  <g aria-label="lector ATS">
+    <rect x="874" y="514" width="98" height="250" rx="16" fill="#1C1C2E"/>
+    <rect x="880" y="520" width="98" height="250" rx="16" fill="none" stroke="#E85D2E" stroke-width="4" opacity="0.48"/>
+    <text x="923" y="554" text-anchor="middle" font-family="'Space Grotesk','Inter',system-ui,sans-serif" font-size="24" font-weight="700" fill="#F6F3ED">ATS</text>
+    <rect x="891" y="578" width="64" height="142" rx="6" fill="#F6F3ED"/>
+    <g fill="#E85D2E"><circle cx="906" cy="606" r="8"/><circle cx="906" cy="642" r="8"/><circle cx="906" cy="678" r="8"/></g>
+    <g stroke="#1C1C2E" stroke-width="4" stroke-linecap="round"><path d="M921 606h23M921 642h23M921 678h23"/></g>
+  </g>
+  <path d="M923 764v34" stroke="#1C1C2E" stroke-width="16"/>
+  <path d="M929 764v34" stroke="#E85D2E" stroke-width="5" opacity="0.58"/>
+  <g aria-label="bandeja de selección">
+    <path d="M850 794h146v74l-18 18H868l-18-18z" fill="#1C1C2E"/>
+    <rect x="884" y="810" width="78" height="52" rx="5" fill="#F6F3ED"/>
+    <path d="M896 826h52M896 842h38" stroke="#E85D2E" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <!-- título asentado abajo -->
+  <path d="M56 942H944" stroke="#E85D2E" stroke-width="3" opacity="0.7"/>
+  <text x="56" y="1040" font-family="'Space Grotesk','Inter',system-ui,sans-serif" font-size="66" font-weight="650" letter-spacing="-2" fill="#1C1C2E">Tu experiencia ya estaba ahí.</text>
+  <path d="M610 1059H938" stroke="#E85D2E" stroke-width="8" stroke-linecap="round"/>
+  <text x="56" y="1110" font-family="'Inter',system-ui,sans-serif" font-size="31" font-weight="450" fill="#1C1C2E">Hacemos que el sistema la lea.</text>
+  <rect x="56" y="1152" width="42" height="4" rx="2" fill="#E85D2E"/>
+</svg>

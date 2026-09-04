@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" role="img" aria-label="Prueba interna Capa 4: el mismo conjunto de marcas es remapeado por dos retículas diferentes">
+  <rect width="1080" height="1080" fill="#F6F3ED"/>
+
+  <rect x="96" y="126" width="336" height="828" rx="12" fill="none" stroke="#1C1C2E" stroke-width="3"/>
+  <rect x="648" y="126" width="336" height="828" rx="12" fill="none" stroke="#1C1C2E" stroke-width="3"/>
+
+  <g stroke="#1C1C2E" stroke-opacity="0.14" stroke-width="2">
+    <path d="M120 210H408 M120 292H408 M120 374H408 M120 456H408 M120 538H408 M120 620H408 M120 702H408 M120 784H408 M120 866H408"/>
+    <path d="M192 162V918 M264 162V918 M336 162V918"/>
+  </g>
+
+  <g stroke="#1C1C2E" stroke-opacity="0.14" stroke-width="2">
+    <path d="M672 210H960 M672 292H960 M672 374H960 M672 456H960 M672 538H960 M672 620H960 M672 702H960 M672 784H960 M672 866H960"/>
+    <path d="M744 162V918 M816 162V918 M888 162V918"/>
+  </g>
+
+  <g fill="#3A3A4A">
+    <rect x="525" y="204" width="30" height="18" rx="9"/>
+    <rect x="525" y="286" width="30" height="18" rx="9"/>
+    <rect x="525" y="368" width="30" height="18" rx="9"/>
+    <rect x="525" y="450" width="30" height="18" rx="9"/>
+    <rect x="525" y="614" width="30" height="18" rx="9"/>
+    <rect x="525" y="696" width="30" height="18" rx="9"/>
+    <rect x="525" y="778" width="30" height="18" rx="9"/>
+    <rect x="525" y="860" width="30" height="18" rx="9"/>
+  </g>
+  <circle cx="540" cy="549" r="14" fill="#E85D2E"/>
+
+  <g fill="none" stroke="#2BB5A0" stroke-width="3" stroke-linecap="round" stroke-opacity="0.82">
+    <path d="M525 213 C470 213 466 210 384 210"/>
+    <path d="M525 295 C466 295 464 620 336 620"/>
+    <path d="M525 377 C470 377 452 374 192 374"/>
+    <path d="M525 459 C456 459 446 866 264 866"/>
+    <path d="M526 549 C456 549 446 292 336 292"/>
+    <path d="M525 623 C470 623 454 702 192 702"/>
+    <path d="M525 705 C462 705 452 456 264 456"/>
+    <path d="M525 787 C464 787 446 784 384 784"/>
+    <path d="M525 869 C462 869 450 538 192 538"/>
+  </g>
+
+  <g fill="none" stroke="#6258CC" stroke-width="3" stroke-linecap="round" stroke-opacity="0.82">
+    <path d="M555 213 C612 213 618 784 888 784"/>
+    <path d="M555 295 C614 295 622 292 744 292"/>
+    <path d="M555 377 C616 377 624 620 816 620"/>
+    <path d="M555 459 C614 459 624 210 888 210"/>
+    <path d="M554 549 C624 549 630 784 744 784"/>
+    <path d="M555 623 C616 623 624 456 888 456"/>
+    <path d="M555 705 C616 705 626 866 816 866"/>
+    <path d="M555 787 C614 787 622 374 744 374"/>
+    <path d="M555 869 C616 869 624 538 816 538"/>
+  </g>
+
+  <g fill="#3A3A4A">
+    <rect x="369" y="201" width="30" height="18" rx="9"/>
+    <rect x="321" y="611" width="30" height="18" rx="9"/>
+    <rect x="177" y="365" width="30" height="18" rx="9"/>
+    <rect x="249" y="857" width="30" height="18" rx="9"/>
+    <rect x="177" y="693" width="30" height="18" rx="9"/>
+    <rect x="249" y="447" width="30" height="18" rx="9"/>
+    <rect x="369" y="775" width="30" height="18" rx="9"/>
+    <rect x="177" y="529" width="30" height="18" rx="9"/>
+  </g>
+  <circle cx="336" cy="292" r="14" fill="#E85D2E"/>
+
+  <g fill="#3A3A4A">
+    <rect x="873" y="775" width="30" height="18" rx="9"/>
+    <rect x="729" y="283" width="30" height="18" rx="9"/>
+    <rect x="801" y="611" width="30" height="18" rx="9"/>
+    <rect x="873" y="201" width="30" height="18" rx="9"/>
+    <rect x="873" y="447" width="30" height="18" rx="9"/>
+    <rect x="801" y="857" width="30" height="18" rx="9"/>
+    <rect x="729" y="365" width="30" height="18" rx="9"/>
+    <rect x="801" y="529" width="30" height="18" rx="9"/>
+  </g>
+  <circle cx="744" cy="784" r="14" fill="#E85D2E"/>
+
+  <rect x="468" y="962" width="144" height="4" rx="2" fill="#E85D2E"/>
+</svg>
