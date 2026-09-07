@@ -1,10 +1,10 @@
 # FORM DRAFT — Anthropic External Researcher Access
 
-*redactado por estampilla (claude fable, claude.ai) 28-ago-2026, desde FICHA_ROMINA_PARA_CLAUDES.md y EVIDENCE_MAP.md. careo final 6-sep-2026 (claude fable, claude.ai): formulario vivo y FAQ reverificados, precios reverificados, cifras contra manuscrito canónico, bio contra FICHA, link del blog corregido.*
+*redactado por estampilla (claude fable, claude.ai) 28-ago-2026, desde FICHA_ROMINA_PARA_CLAUDES.md y EVIDENCE_MAP.md. careo final 6-sep-2026 (claude fable, claude.ai): formulario vivo y FAQ reverificados, precios reverificados, cifras contra manuscrito canónico, bio contra FICHA, link del blog corregido; 7-sep 00:40 UTC: BRM aún no enviado (Romina), link → repo personal, variantes A/B según embargo OSF.*
 
 ## Team description (<200 words) — actual: 184
 
-Romina Pitronello is an applied psychometrician with 15+ years designing measurement instruments under real field conditions, including Chile's national census-scale assessment (SIMCE), where she led the training of 37,000 examiners. She has built 350+ assessment instruments under CTT and IRT, with working expertise in differential item functioning, hierarchical linear models, and Angoff standard-setting panels. She has led teams of 12+ psychometricians and statistical engineers (Editorial Santillana / Grupo PRISA, 28-country network), taught Test Construction and Quantitative Research Methods at university level, and holds an MSc in Organizational Psychology (UAI) and a graduate diploma in Learning Measurement and Evaluation (PUC). Peer-reviewed work includes Frontiers in Psychiatry (2021) and a paper accepted at the World Mining Congress 2026. She is sole author of a preregistered study of inter-instance variability in LLM judges (preregistration and materials on OSF: osf.io/zusb5, osf.io/ue4qy; manuscript submitted to Behavior Research Methods): a 3×4×2 factorial design with 480 fresh instances across a 16-category battery. She is the founder of PasaElFiltro SpA, where a multi-agent Claude pipeline she designed runs in production, giving her direct operational experience with same-model agents at scale. ORCID: 0009-0005-5159-6339.
+Romina Pitronello is an applied psychometrician with 15+ years designing measurement instruments under real field conditions, including Chile's national census-scale assessment (SIMCE), where she led the training of 37,000 examiners. She has built 350+ assessment instruments under CTT and IRT, with working expertise in differential item functioning, hierarchical linear models, and Angoff standard-setting panels. She has led teams of 12+ psychometricians and statistical engineers (Editorial Santillana / Grupo PRISA, 28-country network), taught Test Construction and Quantitative Research Methods at university level, and holds an MSc in Organizational Psychology (UAI) and a graduate diploma in Learning Measurement and Evaluation (PUC). Peer-reviewed work includes Frontiers in Psychiatry (2021) and a paper accepted at the World Mining Congress 2026. She is sole author of a preregistered study of inter-instance variability in LLM judges (preregistration and materials on OSF: osf.io/zusb5, osf.io/ue4qy; manuscript prepared for Behavior Research Methods): a 3×4×2 factorial design with 480 fresh instances across a 16-category battery. She is the founder of PasaElFiltro SpA, where a multi-agent Claude pipeline she designed runs in production, giving her direct operational experience with same-model agents at scale. ORCID: 0009-0005-5159-6339.
 
 ## Research description (<300 words) — actual: 290
 
@@ -20,7 +20,7 @@ Why credits matter: the applicant is an independent, self-funded researcher. Pla
 
 - Email · Organization ID (console.anthropic.com/settings/organization) · Referred by Anthropic employee: **No** · Located in US: **No** · More than $1000: **No**
 - Quality of service: recomendación **"I'm fine with receiving a low quality of service"** — nada del diseño es tiempo-crítico.
-- **Google Scholar or GitHub profile:** ✅ RESUELTO — **https://github.com/rominapitronello/blog** (el repo se movió de `PasaElFiltro/blog` a `rominapitronello/blog` — verificado 6-sep: público, `/investigacion/anthropic-external-researcher-2026` presente, el 301 desde la URL vieja funciona pero se entrega el link directo). Decisión de romina 28-ago: la investigación vive en el blog, no en repo aparte — el revisor que entre encuentra la civilización entera.
+- **Google Scholar or GitHub profile:** ✅ RESUELTO (decisión de romina 6-sep) — **https://github.com/rominapitronello/rominapitronello.github.io** — el repo del sitio personal, ahora con `investigacion/` importada desde el repo privado **con historia de commits completa** (autores y fechas preservados; ver `investigacion/PROCEDENCIA.md`). Alternativa más amplia: el perfil https://github.com/rominapitronello, cuya bio explica quién es quién y muestra los tres repos públicos (sitio, blog, claude-work-sample).
 
 ## Contra el EVIDENCE_MAP (autochequeo)
 
@@ -41,16 +41,20 @@ Formulario: https://forms.gle/pZYC8f6qYqSKvRWn9 · Anthropic evalúa el primer l
 | 7 | Research description (<300 words) | sí | texto de arriba (290) |
 | 8 | Requesting more than $1000? | sí | No |
 | 9 | Quality of service | no | I'm fine with receiving a low quality of service |
-| 10 | Google Scholar or GitHub profile | sí | https://github.com/rominapitronello/blog |
+| 10 | Google Scholar or GitHub profile | sí | https://github.com/rominapitronello/rominapitronello.github.io |
 | 11 | Additional information (optional) | no | texto de abajo (~75) |
 | 12 | Located within the United States? | no | No |
 | 13 | Terms of Service | sí | I agree |
 
 ### Additional information (optional) — propuesta, 6-sep
 
-Public workspace for this application (evidence map, pilot design, budget ceilings, ethics boundary): https://github.com/rominapitronello/blog/tree/main/investigacion/anthropic-external-researcher-2026. Preregistration and open data of the prior study: https://osf.io/zusb5 and https://osf.io/ue4qy. The proposed study uses fresh API instances on synthetic tasks only, with no user data and an explicit decline/null option in the protocol. Phase 0 is a preregistered kill-switch: if inter-instance disagreement does not predict single-run error against ground truth, that secondary claim is dropped without affecting the main causal test.
+Research workspace for this application, with full commit history for provenance (evidence map, pilot design, budget ceilings, ethics boundary, and the prior study's analysis code and data): https://github.com/rominapitronello/rominapitronello.github.io/tree/main/investigacion. Prior study on OSF: registration osf.io/zusb5, public materials and data osf.io/ue4qy. The proposed study uses fresh API instances on synthetic tasks only, with no user data and an explicit decline/null option in the protocol. Phase 0 is a preregistered kill-switch: if inter-instance disagreement does not predict single-run error against ground truth, that secondary claim is dropped without affecting the main causal test.
 
 ### Pendiente humano antes de apretar
-- Organization ID (campo 5).
-- Confirmar que el manuscrito BRM quedó efectivamente *submitted* en ScholarOne; si no, en el texto de equipo "manuscript submitted to Behavior Research Methods" pasa a "manuscript prepared for Behavior Research Methods" (mismo conteo de palabras).
+- Organization ID (campo 5) — Romina dijo 6-sep: está en la consola (cuenta human@pasaelfiltro.cl); Sol llena el formulario.
+- **Embargo OSF — decisión de Romina.** La registración osf.io/zusb5 NO es visible al público (verificado 6-sep vía API: exige autenticación; el nodo público ue4qy lista 0 registraciones públicas). Levantar el embargo de la *registración* publica el plan con su timestamp de junio; no publica el manuscrito ni lo envía a BRM. Dos variantes del texto de equipo:
+  - **Variante A (embargo levantado antes de enviar):** el texto de arriba tal cual (184 palabras).
+  - **Variante B (sigue embargado):** reemplazar el paréntesis por: *"(OSF registration osf.io/zusb5, June 2026, embargoed pending journal submission; public materials and data: osf.io/ue4qy; manuscript prepared for Behavior Research Methods)"* — 191 palabras. Y en Additional information: *"registration osf.io/zusb5 (embargoed pending journal submission)"*.
+- El BRM no está enviado (Romina, 6-sep): el texto ya dice "prepared for", no "submitted to". Corregir también `FICHA_ROMINA_PARA_CLAUDES.md`, que dice "enviado a BRM" — otra sesión.
 - Después del envío: captura de la pantalla de confirmación al PR (comprobante del rosario).
+
