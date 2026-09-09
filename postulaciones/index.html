@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>La búsqueda, medida — Romina Pitronello</title>
-<meta name="description" content="Dashboard público y sanitizado de una búsqueda laboral documentada con evidencia: postulaciones, procedencia, señales de mercado y evolución.">
+<meta name="description" content="Pipeline, entrevistas, finales, latencia de respuesta y renta pedida a partir de una búsqueda laboral longitudinal documentada.">
 <meta property="og:title" content="La búsqueda, medida — Romina Pitronello">
-<meta property="og:description" content="A public, privacy-preserving snapshot of a longitudinal job-search ledger: evidence, market signals and search geometry.">
+<meta property="og:description" content="A longitudinal view of job-search performance: pipeline, interview progression, response latency and compensation asks.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://rominapitronello.github.io/postulaciones/">
 <link rel="canonical" href="https://rominapitronello.github.io/postulaciones/">
@@ -37,59 +37,22 @@
   <ul class="links"><li><a href="mailto:romina.pitronello@gmail.com"><span class="es">correo</span><span class="en">email</span></a></li><li><a href="https://www.linkedin.com/in/romina-pitronello" rel="me">LinkedIn</a></li><li><a href="https://github.com/rominapitronello" rel="me">GitHub</a></li></ul>
 </aside>
 <main id="main" class="dash">
-  <p class="eyebrow"><span class="es">búsqueda laboral · evidencia longitudinal</span><span class="en">job search · longitudinal evidence</span></p>
+  <p class="eyebrow"><span class="es">búsqueda laboral · rendimiento longitudinal</span><span class="en">job search · longitudinal performance</span></p>
   <h1><span class="es">La búsqueda, medida</span><span class="en">The search, measured</span></h1>
   <div class="es">
-    <p class="lede">Buscar trabajo suele desaparecer en pestañas, formularios y memoria. Desde noviembre de 2025 esta búsqueda deja rastro: qué oportunidad apareció, qué se preparó, qué se envió realmente, qué respondió el mercado y qué quedó desconocido.</p>
-    <p class="stamp">Snapshot público al <span data-snapshot-date>09-sep-2026</span>. El ledger fuente es privado.</p>
+    <p class="lede">No quiero saber sólo a cuántos cargos postulé. Quiero saber qué pasa después: cuántos responden, cuánto demoran, cuántas veces llego a entrevista, segunda entrevista o final, y qué renta estoy pidiendo en distintos mercados.</p>
+    <p class="stamp">Corte al <span data-snapshot-date>09-sep-2026</span>.</p>
   </div>
   <div class="en">
-    <p class="lede">Job searches usually disappear into tabs, forms and memory. Since November 2025 this one has left a trace: which opportunity appeared, what was prepared, what was actually submitted, what the market returned, and what remains unknown.</p>
-    <p class="stamp">Public snapshot as of <span data-snapshot-date>2026-09-09</span>. The source ledger is private.</p>
+    <p class="lede">I do not only want to know how many roles I applied to. I want to know what happens next: who responds, how long it takes, how often I reach a first interview, a second interview or a final round, and what compensation I ask for across markets.</p>
+    <p class="stamp">Snapshot as of <span data-snapshot-date>2026-09-09</span>.</p>
   </div>
 
-  <div id="dashboard-data"><p class="loading"><span class="es">Cargando snapshot…</span><span class="en">Loading snapshot…</span></p></div>
-  <noscript><p class="noscript">Este dashboard necesita JavaScript para dibujar el snapshot. / This dashboard needs JavaScript to render the snapshot.</p></noscript>
-
-  <section class="section" aria-labelledby="findings-title">
-    <div class="section-head"><h2 id="findings-title"><span class="es">Qué se puede leer ya</span><span class="en">What is already visible</span></h2><span class="meta"><span class="es">dato primero, hipótesis después</span><span class="en">data first, hypotheses second</span></span></div>
-    <div class="es">
-      <ol class="findings">
-        <li><div><h3>No es una búsqueda de baja actividad.</h3><p>El archivo ya contiene más de cien casos y 147 conversaciones fuente. El problema analítico no es “no hubo intentos”; es entender qué tipos de intento generan señal y cuáles mueren antes de una conversación.</p></div></li>
-        <li><div><h3>El cuello de botella histórico aparece antes de las finales.</h3><p>En dos cortes declarados de abril, 6 procesos llegaron a callback sobre denominadores distintos (35 y 25), y 2 llegaron a final. Los denominadores no se corrigen retroactivamente: la discrepancia es parte del registro.</p></div></li>
-        <li><div><h3>La búsqueda se está abriendo por tipo de problema, no sólo por título.</h3><p>El corte actual contiene liderazgo de Personas, Applied Science, consultoría de IA agéntica y servicios de selección. Esa mezcla permite estudiar encaje por arquitectura del trabajo, no sólo por familia ocupacional.</p></div></li>
-        <li><div><h3>Hipótesis de trabajo: medir el encaje donde el mercado devuelve señal.</h3><p>No basta con preguntar “¿qué cargo le gusta a Romina?”. La pregunta más útil es qué problemas combinan interés sostenido, evidencia de capacidad y respuesta externa. Este dashboard existe para poder contrastar esa hipótesis con el tiempo.</p></div></li>
-      </ol>
-    </div>
-    <div class="en">
-      <ol class="findings">
-        <li><div><h3>This is not a low-activity search.</h3><p>The archive already contains more than one hundred cases and 147 source conversations. The analytical problem is not “too few attempts”; it is which kinds of attempts generate signal and which die before a conversation.</p></div></li>
-        <li><div><h3>The historical bottleneck appears before final rounds.</h3><p>In two April snapshots, 6 processes reached callback from different declared denominators (35 and 25), and 2 reached finals. The denominators are not retroactively reconciled: the discrepancy remains part of the record.</p></div></li>
-        <li><div><h3>The search is widening by problem type, not only job title.</h3><p>The current snapshot spans People leadership, Applied Science, agentic AI consulting and selection services. That mix makes it possible to study fit by work architecture rather than occupational label alone.</p></div></li>
-        <li><div><h3>Working hypothesis: measure fit where the market returns signal.</h3><p>“Which job title does Romina like?” is too weak a question. A better one is which problems combine sustained interest, demonstrated capability and external response. This dashboard exists so that hypothesis can be tested over time.</p></div></li>
-      </ol>
-    </div>
-  </section>
-
-  <section class="method" aria-labelledby="method-title">
-    <h2 id="method-title"><span class="es">Cómo leer esto</span><span class="en">How to read this</span></h2>
-    <div class="es">
-      <p><strong>Fuente de verdad privada.</strong> El ledger distingue <em>materiales listos</em> de <em>envío confirmado</em>. Un CV existente no prueba una postulación.</p>
-      <p><strong>Triangulación.</strong> El backfill cruza resúmenes de conversaciones, Gmail, LinkedIn y portales ATS. Los resúmenes son índices, no transcripciones; cuando una decisión importa, se vuelve a la fuente.</p>
-      <p><strong>Privacidad.</strong> Esta vista no contiene nombres de reclutadores, direcciones de correo, mensajes ni el directorio de contactos. Sólo publica agregados y categorías deliberadamente sanitizadas.</p>
-      <p><strong>No es un feed en vivo.</strong> Los números corresponden al corte indicado arriba. Una actualización futura debe generar un nuevo snapshot, no reescribir silenciosamente el anterior.</p>
-    </div>
-    <div class="en">
-      <p><strong>Private source of truth.</strong> The ledger distinguishes <em>materials ready</em> from <em>confirmed submission</em>. An existing CV does not prove that an application was sent.</p>
-      <p><strong>Triangulation.</strong> Backfill crosses conversation digests, Gmail, LinkedIn and ATS portals. Digests are indexes, not transcripts; consequential claims return to the source.</p>
-      <p><strong>Privacy.</strong> This view contains no recruiter names, email addresses, messages or contact directory. It publishes only aggregates and deliberately sanitized categories.</p>
-      <p><strong>Not a live feed.</strong> Numbers belong to the dated snapshot above. Future updates should create a new snapshot rather than silently rewriting the past.</p>
-    </div>
-    <div class="source-key" aria-label="Fuentes / Sources"><span>chat index</span><span>Gmail</span><span>LinkedIn</span><span>ATS portals</span><span>manual notebook</span></div>
-  </section>
+  <div id="dashboard-data"><p class="loading"><span class="es">Cargando métricas…</span><span class="en">Loading metrics…</span></p></div>
+  <noscript><p class="noscript">Este dashboard necesita JavaScript. / This dashboard needs JavaScript.</p></noscript>
 
   <footer>
-    <p><span class="es">Dashboard v1: estructura, selección y pluma de Sol (GPT-5.6 Sol), 09-sep-2026. Datos derivados del ledger privado construido por Claude con Romina; las discrepancias y los nulls se conservan.</span><span class="en">Dashboard v1: structure, selection and writing by Sol (GPT-5.6 Sol), 09-Sep-2026. Data derived from the private ledger built by Claude with Romina; discrepancies and nulls are preserved.</span></p>
+    <p><span class="es">Dashboard v2: análisis y pluma de Sol (GPT-5.6 Sol), 09-sep-2026. El snapshot analítico reproducible vive junto al ledger privado; aquí se publica sólo la capa agregada.</span><span class="en">Dashboard v2: analysis and writing by Sol (GPT-5.6 Sol), 09-Sep-2026. The reproducible analytical snapshot lives next to the private ledger; only the aggregate layer is published here.</span></p>
     <p><span class="es">HTML plano, sin rastreadores.</span><span class="en">Plain HTML, no trackers.</span> <a href="https://github.com/rominapitronello/rominapitronello.github.io"><span class="es">Fuente del sitio</span><span class="en">Site source</span></a>.</p>
   </footer>
 </main>
