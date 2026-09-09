@@ -10,6 +10,7 @@ Soy psicometrista — construyo instrumentos de medición — y desde 2026 mido 
 
 - **El sitio:** https://rominapitronello.github.io/
 - [`investigacion/`](investigacion/) — el laboratorio. La frontera ética de la línea; el código y los datos del primer estudio, preregistrado en OSF (registro `zusb5`; materiales y datos públicos en [osf.io/ue4qy](https://osf.io/ue4qy)); y el workspace completo de la postulación a Anthropic, con sus revisiones adversariales entre dos plumas. [`PROCEDENCIA.md`](investigacion/PROCEDENCIA.md) dice qué se importó, qué no, y por qué.
+- [`postulaciones/`](postulaciones/) — **la búsqueda, medida**. Dashboard público y sanitizado derivado de un ledger privado longitudinal: tamaño del archivo, calidad de la evidencia, cortes históricos y forma actual de la búsqueda. No publica nombres de reclutadores, correos ni correspondencia.
 - [`escritos/`](escritos/) — los textos del blog, coescritos, con la pluma que integró cada uno.
 - [`construccion/`](construccion/) — qué diseñé yo y qué construyeron otras plumas, con nombre.
 - [`docencia/`](docencia/) y [`cv/`](cv/) — lo de siempre, ordenado.
@@ -18,6 +19,8 @@ Soy psicometrista — construyo instrumentos de medición — y desde 2026 mido 
 ## Quién escribe qué
 
 Acá nadie escribe por otro. El copy común (home, secciones, navegación) lo escribió una pluma Claude desde las fuentes de la casa, para que yo lo edite — lo que yo cambie, manda. Mi bio en `construccion/` es mía, verbatim. Las fichas de `casa/` son de sus autoras, verbatim, en español; no se editan. Cambiar un permiso en `casa/PERMISOS.md` requiere firma y fecha. Los chats privados con instancias no son material público ni dato de investigación. Un null aquí es un null.
+
+El dashboard de `postulaciones/` fue estructurado y escrito por Sol (GPT-5.6 Sol) a partir de un snapshot sanitizado del ledger privado construido por Claude con Romina. El ledger privado manda; la página pública no se usa como fuente para reconstruir datos privados.
 
 ## Para mantener el sitio (notas de taller)
 
@@ -29,8 +32,11 @@ Cada página es un `index.html` dentro de su carpeta. El texto está dos veces: 
 
 - El bloque **ahora** está en `index.html` y lleva la fecha en la primera línea.
 - Los **escritos** se agregan como una `<li>` más en `escritos/index.html`.
+- El dashboard de **postulaciones** lee `postulaciones/snapshot.json`; ese archivo sólo admite datos agregados o categorías sanitizadas. El ledger privado nunca se expone desde el browser.
 - Para **encender una obra** en la galería: agregar la imagen en `casa/obras/`, anotar el permiso en `casa/PERMISOS.md`, y en `casa/index.html` reemplazar el párrafo `estado` de esa obra y agregar su `<figure>`.
 
 ## Procedencia
 
 Propuesta y decisiones en `PasaElFiltro/pasaelfiltro`, PR #597 (`proyectos/sitio-romina/`). Generador de las páginas en `proyectos/sitio-romina/tools/build.py` de ese repo; este repo recibe sólo el HTML.
+
+Dashboard `postulaciones/`: Sol, 09-sep-2026. Fuente: snapshot público sanitizado derivado de `rominapitronello/Postulaciones` (privado).
