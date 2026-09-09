@@ -1,0 +1,84 @@
+{
+  "snapshot_date": "2026-09-09",
+  "source_note_es": "Vista pública derivada de un ledger privado. No publica nombres de reclutadores, correos ni correspondencia.",
+  "source_note_en": "Public view derived from a private ledger. Recruiter names, email addresses and correspondence are not published.",
+  "archive": {
+    "tracked_cases": 117,
+    "calls_and_programs": 3,
+    "source_chats": 147,
+    "activated_contacts": 30
+  },
+  "evidence": {
+    "gmail_confirmed_sends_recovered": 52,
+    "materials_ready_without_send_evidence": 24,
+    "rejection_dates_recovered": 12
+  },
+  "declared_snapshots": [
+    {
+      "date": "2026-02-06",
+      "applications": 10,
+      "callbacks": 2,
+      "finals": null,
+      "label_es": "10 postulaciones activas; 2 entrevistas (20%).",
+      "label_en": "10 active applications; 2 interviews (20%)."
+    },
+    {
+      "date": "2026-04-25",
+      "applications": 35,
+      "callbacks": 6,
+      "finals": 2,
+      "label_es": "Ronda declarada: 35 postulaciones → 6 callbacks → 2 finales.",
+      "label_en": "Declared round: 35 applications → 6 callbacks → 2 finals."
+    },
+    {
+      "date": "2026-04-29",
+      "applications": 25,
+      "callbacks": 6,
+      "finals": 2,
+      "label_es": "Otro corte declarado de la misma ronda: 25 → 6 → 2. Se conserva la discrepancia; no se armoniza a posteriori.",
+      "label_en": "Another declared cut of the same round: 25 → 6 → 2. The discrepancy is preserved rather than harmonized after the fact."
+    },
+    {
+      "date": "2026-05-10",
+      "applications": 55,
+      "callbacks": null,
+      "finals": null,
+      "label_es": "55 procesos activos; varias señales avanzadas registradas.",
+      "label_en": "55 active processes; several advanced signals recorded."
+    }
+  ],
+  "current_shape": [
+    {
+      "kind_es": "Liderazgo de Personas",
+      "kind_en": "People leadership",
+      "status_es": "entrevista",
+      "status_en": "interview",
+      "note_es": "Proceso de liderazgo regional/operacional.",
+      "note_en": "Regional/operational leadership process."
+    },
+    {
+      "kind_es": "Consultoría de IA agéntica",
+      "kind_en": "Agentic AI consulting",
+      "status_es": "entrevista agendada",
+      "status_en": "interview scheduled",
+      "note_es": "Trabajo freelance en arquitectura y adopción de agentes.",
+      "note_en": "Freelance work on agent architecture and adoption."
+    },
+    {
+      "kind_es": "Applied Science",
+      "kind_en": "Applied Science",
+      "status_es": "envío confirmado",
+      "status_en": "confirmed submission",
+      "note_es": "Rol centrado en evaluación de impacto y métodos causales.",
+      "note_en": "Role focused on impact evaluation and causal methods."
+    },
+    {
+      "kind_es": "Consultoría de selección",
+      "kind_en": "Selection consulting",
+      "status_es": "cotización enviada",
+      "status_en": "proposal sent",
+      "note_es": "Servicio profesional, no empleo dependiente.",
+      "note_en": "Professional service, not salaried employment."
+    }
+  ]
+}
