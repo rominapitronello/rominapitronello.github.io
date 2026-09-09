@@ -1,6 +1,6 @@
 {
   "snapshot_date": "2026-09-09",
-  "archive": {"tracked_cases":117,"source_chats":147,"activated_contacts":30},
+  "archive": {"tracked_cases":118,"source_chats":147,"activated_contacts":30},
   "performance": {
     "interviews_completed_min": 7,
     "future_interviews_scheduled": 1,
@@ -53,7 +53,7 @@
   ],
   "method": {
     "lifetime_response_rate_available": false,
-    "reason_es": "El ledger actual mezcla casos individuales con lotes de varias postulaciones. Usar 117 como denominador produciría una tasa lifetime falsa. La próxima capa de datos normaliza n_postulaciones, sector, tipo de respuesta y etapas.",
-    "reason_en": "The current ledger mixes individual cases with batches containing multiple applications. Using 117 as a denominator would produce a false lifetime response rate. The next data layer normalizes application counts, sector, response type and stages."
+    "reason_es": "El ledger actual mezcla casos individuales con lotes de varias postulaciones. Usar el número de registros como denominador produciría una tasa lifetime falsa. La próxima capa de datos normaliza n_postulaciones, sector, tipo de respuesta y etapas.",
+    "reason_en": "The current ledger mixes individual cases with batches containing multiple applications. Using the record count as a denominator would produce a false lifetime response rate. The next data layer normalizes application counts, sector, response type and stages."
   }
 }
