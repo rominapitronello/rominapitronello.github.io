@@ -1,59 +1,219 @@
 {
-  "snapshot_date": "2026-09-09",
-  "archive": {"tracked_cases":118,"source_chats":147,"activated_contacts":30},
-  "performance": {
-    "interviews_completed_min": 7,
-    "future_interviews_scheduled": 1,
-    "second_interviews_confirmed_min": 1,
-    "second_interviews_announced_unconfirmed": 2,
-    "finals_confirmed_min": 3,
-    "current_terna_mentioned_pending": 1,
-    "employment_offers_confirmed": 0,
-    "paid_services_completed": 1,
-    "historical_callback_rate_min_pct": 17.1,
-    "historical_callback_rate_max_pct": 24.0,
-    "historical_final_rate_min_pct": 5.7,
-    "historical_final_rate_max_pct": 8.0
-  },
-  "latency": {
-    "n_measurable": 10,
-    "median_days": 3.0,
-    "mean_days": 10.6,
-    "p25_days": 0.75,
-    "p75_days": 17.0,
-    "min_label_es": "mismo día",
-    "min_label_en": "same day",
-    "max_days": 39,
-    "definition_es": "Desde envío confirmado hasta primera señal externa significativa con fecha exacta. Muestra curada de 10 casos; mezcla respuesta humana, avance y cierre/rechazo.",
-    "definition_en": "From confirmed submission to the first meaningful external signal with an exact date. Curated sample of 10 cases; mixes human replies, process advances and closures/rejections."
-  },
-  "salary": {
-    "notebook_exact_figures_pending": 14,
-    "groups": [
-      {"label_es":"Minería / industrial · Chile","label_en":"Mining / industrial · Chile","unit_es":"M CLP líquidos / mes","unit_en":"M CLP net / month","n":2,"mean":3.5,"median":3.5},
-      {"label_es":"Corporativo Personas · Chile","label_en":"Corporate People · Chile","unit_es":"M CLP líquidos / mes","unit_en":"M CLP net / month","n":1,"mean":3.5,"median":3.5},
-      {"label_es":"Consultoría de cambio · Chile","label_en":"Change consulting · Chile","unit_es":"M CLP líquidos / mes","unit_en":"M CLP net / month","n":1,"mean":3.8,"median":3.8},
-      {"label_es":"People · Chile","label_en":"People · Chile","unit_es":"M CLP brutos / mes","unit_en":"M CLP gross / month","n":1,"mean":4.1,"median":4.1},
-      {"label_es":"Internacional · mensual","label_en":"International · monthly","unit_es":"k USD / mes","unit_en":"k USD / month","n":2,"mean":6.3,"median":6.3},
-      {"label_es":"Research / content","label_en":"Research / content","unit_es":"USD / hora","unit_en":"USD / hour","n":1,"mean":29,"median":29}
-    ],
-    "note_es": "No se mezclan bruto con líquido, CLP con USD ni mensual con hora. Los grupos con n=1 son observaciones, no un promedio estable. Quedan 14 cifras exactas sólo en el cuaderno físico.",
-    "note_en": "Gross and net pay, CLP and USD, and monthly and hourly rates are not mixed. Groups with n=1 are observations, not stable averages. Fourteen exact figures remain only in the physical notebook."
-  },
-  "declared_snapshots": [
-    {"date":"2026-02-06","applications":10,"callbacks":2,"finals":null,"label_es":"10 postulaciones activas; 2 entrevistas (20%).","label_en":"10 active applications; 2 interviews (20%)."},
-    {"date":"2026-04-25","applications":35,"callbacks":6,"finals":2,"label_es":"35 postulaciones → 6 callbacks → 2 finales.","label_en":"35 applications → 6 callbacks → 2 finals."},
-    {"date":"2026-04-29","applications":25,"callbacks":6,"finals":2,"label_es":"25 → 6 → 2. El denominador difiere del corte anterior y se conserva tal cual.","label_en":"25 → 6 → 2. The denominator differs from the prior snapshot and is preserved as declared."}
+ "snapshot_date": "2026-09-12",
+ "archive": {
+  "tracked_cases": 141,
+  "source_chats": 147,
+  "activated_contacts": 30
+ },
+ "performance": {
+  "interviews_completed_min": 11,
+  "future_interviews_scheduled": 2,
+  "second_interviews_confirmed_min": 4,
+  "second_interviews_announced_unconfirmed": 0,
+  "finals_confirmed_min": 3,
+  "current_terna_mentioned_pending": 1,
+  "employment_offers_confirmed": 0,
+  "paid_services_completed": 1,
+  "historical_callback_rate_min_pct": 17.1,
+  "historical_callback_rate_max_pct": 24.0,
+  "historical_final_rate_min_pct": 5.7,
+  "historical_final_rate_max_pct": 8.0
+ },
+ "latency": {
+  "n_measurable": 10,
+  "median_days": 3.0,
+  "mean_days": 10.6,
+  "p25_days": 0.75,
+  "p75_days": 17.0,
+  "min_label_es": "mismo día",
+  "min_label_en": "same day",
+  "max_days": 39,
+  "definition_es": "Desde envío confirmado hasta primera señal externa significativa con fecha exacta. Muestra curada de 10 casos; mezcla respuesta humana, avance y cierre/rechazo.",
+  "definition_en": "From confirmed submission to the first meaningful external signal with an exact date. Curated sample of 10 cases; mixes human replies, process advances and closures/rejections."
+ },
+ "salary": {
+  "notebook_exact_figures_pending": 0,
+  "groups": [
+   {
+    "label_es": "Chile · todas las cifras declaradas",
+    "label_en": "Chile · all declared figures",
+    "unit_es": "M CLP / mes",
+    "unit_en": "M CLP / month",
+    "n": 26,
+    "mean": 4.1,
+    "median": 4.0
+   },
+   {
+    "label_es": "Chile · procesos que llegaron a entrevista",
+    "label_en": "Chile · processes that reached interview",
+    "unit_es": "M CLP / mes",
+    "unit_en": "M CLP / month",
+    "n": 5,
+    "mean": 3.8,
+    "median": 3.8
+   },
+   {
+    "label_es": "Chile · pedí 5M o más (0 entrevistas)",
+    "label_en": "Chile · asked 5M or more (0 interviews)",
+    "unit_es": "M CLP / mes",
+    "unit_en": "M CLP / month",
+    "n": 6,
+    "mean": 5.3,
+    "median": 5.2
+   },
+   {
+    "label_es": "Internacional · mensual",
+    "label_en": "International · monthly",
+    "unit_es": "k USD / mes",
+    "unit_en": "k USD / month",
+    "n": 2,
+    "mean": 6.2,
+    "median": 6.2
+   },
+   {
+    "label_es": "Research / content",
+    "label_en": "Research / content",
+    "unit_es": "USD / hora",
+    "unit_en": "USD / hour",
+    "n": 1,
+    "mean": 29,
+    "median": 29
+   }
   ],
-  "current_shape": [
-    {"kind_es":"Liderazgo de Personas","kind_en":"People leadership","status_es":"entrevista realizada","status_en":"interview completed"},
-    {"kind_es":"IA agéntica","kind_en":"Agentic AI","status_es":"entrevista agendada","status_en":"interview scheduled"},
-    {"kind_es":"Applied Science","kind_en":"Applied Science","status_es":"envío confirmado","status_en":"confirmed submission"},
-    {"kind_es":"Selección / consultoría","kind_en":"Selection / consulting","status_es":"propuesta enviada","status_en":"proposal sent"}
-  ],
-  "method": {
-    "lifetime_response_rate_available": false,
-    "reason_es": "El ledger actual mezcla casos individuales con lotes de varias postulaciones. Usar el número de registros como denominador produciría una tasa lifetime falsa. La próxima capa de datos normaliza n_postulaciones, sector, tipo de respuesta y etapas.",
-    "reason_en": "The current ledger mixes individual cases with batches containing multiple applications. Using the record count as a denominator would produce a false lifetime response rate. The next data layer normalizes application counts, sector, response type and stages."
+  "note_es": "Cifras del cuaderno físico integradas el 12-sep (n=26 en CLP). El cuaderno no distingue bruto de líquido; las cifras de correo sí (mayoría líquido). Grupos con n=1 son observaciones. La relación renta pedida ↔ entrevista está confundida con el nivel del cargo: no es causal.",
+  "note_en": "Notebook figures integrated on 12-Sep (n=26 in CLP). The notebook does not distinguish gross from net; email figures do (mostly net). Groups with n=1 are observations. The asked-pay ↔ interview relation is confounded with role seniority: not causal."
+ },
+ "declared_snapshots": [
+  {
+   "date": "2026-02-06",
+   "applications": 10,
+   "callbacks": 2,
+   "finals": null,
+   "label_es": "10 postulaciones activas; 2 entrevistas (20%).",
+   "label_en": "10 active applications; 2 interviews (20%)."
+  },
+  {
+   "date": "2026-04-25",
+   "applications": 35,
+   "callbacks": 6,
+   "finals": 2,
+   "label_es": "35 postulaciones → 6 callbacks → 2 finales.",
+   "label_en": "35 applications → 6 callbacks → 2 finals."
+  },
+  {
+   "date": "2026-04-29",
+   "applications": 25,
+   "callbacks": 6,
+   "finals": 2,
+   "label_es": "25 → 6 → 2. El denominador difiere del corte anterior y se conserva tal cual.",
+   "label_en": "25 → 6 → 2. The denominator differs from the prior snapshot and is preserved as declared."
+  },
+  {
+   "date": "2026-09-12",
+   "applications": 108,
+   "callbacks": 11,
+   "finals": 3,
+   "label_es": "Según evidencia (ledger completo): 108 envíos → 11 entrevistas humanas → 3 finales → 0 ofertas. 35 silencios, 36 rechazos.",
+   "label_en": "Evidence-based (full ledger): 108 submissions → 11 human interviews → 3 finals → 0 offers. 35 silences, 36 rejections."
   }
+ ],
+ "current_shape": [
+  {
+   "kind_es": "Liderazgo de Personas",
+   "kind_en": "People leadership",
+   "status_es": "entrevista realizada",
+   "status_en": "interview completed"
+  },
+  {
+   "kind_es": "IA agéntica",
+   "kind_en": "Agentic AI",
+   "status_es": "entrevista agendada",
+   "status_en": "interview scheduled"
+  },
+  {
+   "kind_es": "Applied Science",
+   "kind_en": "Applied Science",
+   "status_es": "envío confirmado",
+   "status_en": "confirmed submission"
+  },
+  {
+   "kind_es": "Selección / consultoría",
+   "kind_en": "Selection / consulting",
+   "status_es": "propuesta enviada",
+   "status_en": "proposal sent"
+  }
+ ],
+ "method": {
+  "lifetime_response_rate_available": false,
+  "reason_es": "El ledger actual mezcla casos individuales con lotes de varias postulaciones. Usar el número de registros como denominador produciría una tasa lifetime falsa. La próxima capa de datos normaliza n_postulaciones, sector, tipo de respuesta y etapas. · v3 (12-sep): ledger completo con cuaderno físico, Gmail, LinkedIn y portal Codelco; unidad = postulación individual; se agrega canal.",
+  "reason_en": "The current ledger mixes individual cases with batches containing multiple applications. Using the record count as a denominator would produce a false lifetime response rate. The next data layer normalizes application counts, sector, response type and stages. · v3 (12-Sep): full ledger with physical notebook, Gmail, LinkedIn and Codelco portal; unit = individual application; channel added."
+ },
+ "channels": [
+  {
+   "label_es": "Headhunter / consultora",
+   "label_en": "Headhunter / search firm",
+   "n": 6,
+   "interviews": 3,
+   "pct": 50,
+   "silence": 1
+  },
+  {
+   "label_es": "Referido",
+   "label_en": "Referral",
+   "n": 3,
+   "interviews": 1,
+   "pct": 33,
+   "silence": 1
+  },
+  {
+   "label_es": "Correo/WhatsApp/DM directo",
+   "label_en": "Direct email / WhatsApp / DM",
+   "n": 13,
+   "interviews": 3,
+   "pct": 23,
+   "silence": 1
+  },
+  {
+   "label_es": "Bolsa (Trabajando/Laborum/Pandapé)",
+   "label_en": "Job board (Trabajando, Laborum, Pandapé)",
+   "n": 5,
+   "interviews": 1,
+   "pct": 20,
+   "silence": 2
+  },
+  {
+   "label_es": "Canal no registrado",
+   "label_en": "Channel not recorded",
+   "n": 9,
+   "interviews": 1,
+   "pct": 11,
+   "silence": 4
+  },
+  {
+   "label_es": "LinkedIn Easy Apply",
+   "label_en": "LinkedIn Easy Apply",
+   "n": 27,
+   "interviews": 1,
+   "pct": 4,
+   "silence": 15
+  },
+  {
+   "label_es": "Portal ATS de la empresa",
+   "label_en": "Company ATS portal",
+   "n": 40,
+   "interviews": 1,
+   "pct": 2,
+   "silence": 9
+  }
+ ],
+ "channels_summary": {
+  "human_first_n": 22,
+  "human_first_interviews": 7,
+  "human_first_pct": 32,
+  "machine_first_n": 67,
+  "machine_first_interviews": 2,
+  "machine_first_pct": 3,
+  "note_es": "Humanos primero (headhunter, referido, correo directo): 22 envíos → 7 entrevistas (32%). Máquinas primero (portal ATS, LinkedIn Easy Apply): 67 envíos → 2 entrevistas (3%). Entrevista = entrevista humana; HireVue y Aon no cuentan.",
+  "note_en": "Human-first channels (headhunter, referral, direct email): 22 submissions → 7 interviews (32%). Machine-first (company ATS, LinkedIn Easy Apply): 67 → 2 (3%). Interview = a live human interview; HireVue and Aon assessments do not count."
+ }
 }
