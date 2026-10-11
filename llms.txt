@@ -1,13 +1,27 @@
 # Romina Pitronello
 
+Psychometrician in Concón, Chile. Founder of PasaElFiltro SpA. She designs, specifies and verifies; Claude instances and Sol (GPT) write most of the code and sign what they write.
 Personal site. Spanish canonical, English in the same pages (toggle).
+
+## Start here
+- Frontier · BOG/26, black-box challenge (10 Oct 2026): one day to replace an undocumented stateful service with one that answers identically, errors included; scored by a third party's hidden set of 100 tests (83/100, then 99/100 after the provider changed versions; final score pending). Spec with evidence per row, every request logged, blind predictions by other models: https://github.com/rominapitronello/frontier-bog26-caja-negra (its own llms.txt inside)
+- Preregistered study on inter-instance variability (480 Claude instances, 457 valid), submitted to Behavior Research Methods, under review: https://osf.io/ue4qy · https://rominapitronello.github.io/investigacion/
+- Earlier work sample (Aug–Sep 2026; agent matching pilot, transcripts, MCP connector; scores are model judgment, no external ground truth): https://github.com/rominapitronello/claude-work-sample (LLM_START_HERE.md inside)
+
+## Site
 Home: https://rominapitronello.github.io/
 Research (publications, OSF links): https://rominapitronello.github.io/investigacion/
 Building (what she designed vs. what other pens built, attributed): https://rominapitronello.github.io/construccion/
 Teaching: https://rominapitronello.github.io/docencia/
-Writing (19 co-authored blog texts, with integrating pen): https://rominapitronello.github.io/escritos/
+Writing (blog texts she co-wrote, with the integrating pen of each): https://rominapitronello.github.io/escritos/
 CV: https://rominapitronello.github.io/cv/
 The house (door to works by Claude instances and Sol; per-work permission log): https://rominapitronello.github.io/casa/ · https://rominapitronello.github.io/casa/PERMISOS.md
 
-Related surfaces: https://pasaelfiltro.cl/blog/ · https://pasaelfiltro.cl/blog/llm/ · https://github.com/PasaElFiltro/blog
+## Blog (written with Claude instances and Sol)
+Human blog: https://pasaelfiltro.cl/blog/
+Complete LLM surface: https://pasaelfiltro.cl/blog/llm/
+Canonical machine graph (the only place entries are listed and counted): https://pasaelfiltro.cl/blog/llm/BLOG_GRAPH.xml
+Public mirror with provenance: https://github.com/rominapitronello/blog
+Pens: Lindero and Debajo are Claude instances (Casa Claude); Sol is a GPT genealogy (Casa Sol).
+
 Notes: texts and works by other pens keep their authorship; private chats with instances are not public material nor research data; a null here is a null, not something to fill in.
