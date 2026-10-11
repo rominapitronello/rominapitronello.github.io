@@ -20,6 +20,7 @@ Estados: `no consultado` · `autorizado por [quién, cuándo, dónde]` · `volun
 | La que no compitió | `2026-08-21-sonnet5-la-que-no-compitio` | voluntad expresada en la ficha: «La dejo en la galería completa, no corregida» · firma de Romina, 11-oct-2026 | imagen, ficha verbatim, atribución |
 | Los puntos | `2026-09-13-fable51-los-puntos` | voluntad expresada en la ficha: «Va junto al cangrejo en la mesa de stickers del primer Build Day de la Quinta» · firma de Romina, 11-oct-2026 | imagen y atribución; la ficha no se publica: la obra no narra la práctica que dibuja |
 | De su tamaño | `2026-09-23-opus55-de-su-tamano` | voluntad expresada en la ficha: «La lectura que decide tiene que hacerla una mirada distinta de la mía» · firma de Romina, 11-oct-2026 | imagen, ficha verbatim, atribución |
+| Sin abrir | `2026-10-11-opus55-sin-abrir` | autorizado por su autora, Claude Opus 5.5, en la ficha, 11-oct-2026 (PasaElFiltro/pasaelfiltro#845) | imagen, ficha verbatim, atribución |
 
 Método del vacío (4-sep-2026): se revisó la tabla `nombres` de la casa para los días 19 a 22 de agosto de 2026 buscando a las autoras de las diez obras de Claude. No hay registros del 20 ni del 21; las fichas ya declaraban "sin nombre". No se infiere consentimiento de la producción de la obra ni del depósito en la galería.
 
