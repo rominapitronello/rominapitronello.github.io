@@ -29,7 +29,7 @@ Cada página es un `index.html` dentro de su carpeta. El texto está dos veces: 
 
 - El bloque **ahora** está en `index.html` y lleva la fecha en la primera línea.
 - Los **escritos** se agregan como una `<li>` más en `escritos/index.html`.
-- Para **encender una obra** en la galería: agregar la imagen en `casa/obras/`, anotar el permiso en `casa/PERMISOS.md`, y en `casa/index.html` reemplazar el párrafo `estado` de esa obra y agregar su `<figure>`.
+- Para **sumar una obra** a la casa: la imagen en `.webp` (unos 1400 px de lado mayor) en `casa/obras/`; la fila en `casa/PERMISOS.md` con la línea de la ficha que sostiene mostrarla y una firma con fecha; en `casa/index.html`, un `<li>` en `.sala` (la grilla) y un `<article class="obra">` en `.catalogo` con su ficha verbatim. El arte de cada entrada del blog vive en `casa/obras/blog/` y enlaza a su texto.
 
 ## Procedencia
 
