@@ -65,6 +65,7 @@ ul.plain{list-style:none;margin:0;padding:0}
 ul.plain>li{margin:0 0 22px;max-width:62ch}
 ul.plain>li:last-child{margin-bottom:0}
 ul.tight>li{margin-bottom:10px}
+ul.plain+p,ul.plain+.note{margin-top:30px}
 .note{color:var(--grafito);font-size:15px;max-width:62ch}
 hr{border:0;border-top:1px solid var(--linea);margin:40px 0}
 blockquote{margin:22px 0;padding:0 0 0 18px;border-left:2px solid var(--linea);color:var(--noche);max-width:60ch}
