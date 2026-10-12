@@ -4,7 +4,7 @@ Psychometrician in Concón, Chile. Founder of PasaElFiltro SpA. She designs, spe
 Personal site. Spanish canonical, English in the same pages (toggle).
 
 ## Start here
-- Frontier · BOG/26, black-box challenge (10 Oct 2026): one day to replace an undocumented stateful service with one that answers identically, errors included; scored by a third party's hidden set of 100 tests (83/100, then 99/100 after the provider changed versions; final score pending). Spec with evidence per row, every request logged, blind predictions by other models: https://github.com/rominapitronello/frontier-bog26-caja-negra (its own llms.txt inside)
+- Frontier · BOG/26, black-box challenge (10 Oct 2026): one day to replace an undocumented stateful service with one that answers identically, errors included; scored by a third party's hidden set of 100 tests (83/100, then 99/100 after the provider changed versions, then 100/100 in both final jury runs). Spec with evidence per row, every request logged, blind predictions by other models: https://github.com/rominapitronello/frontier-bog26-caja-negra (its own llms.txt inside)
 - Preregistered study on inter-instance variability (480 Claude instances, 457 valid), submitted to Behavior Research Methods, under review: https://osf.io/ue4qy · https://rominapitronello.github.io/investigacion/
 - Earlier work sample (Aug–Sep 2026; agent matching pilot, transcripts, MCP connector; scores are model judgment, no external ground truth): https://github.com/rominapitronello/claude-work-sample (LLM_START_HERE.md inside)
 
